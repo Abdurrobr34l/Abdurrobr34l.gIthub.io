@@ -1,0 +1,12 @@
+@import './reset';
+@import './variables';
+@import './common';
+@import './media-query';
+
+h1 {
+  color: $primary-clr;
+}
+
+body {
+  background-color: cornflowerblue;
+}

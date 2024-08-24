@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui;
+}
+
+a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 15px 60px;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid;
+  border-radius: 8px;
+}
+a:hover {
+  background-color: rgb(169, 178, 186);
+  color: cadetblue;
+  border: 1px solid cadetblue;
+}
+
+/* EXTRA SMALL DEVICES (PORTRAIT PHONE, less than 576px) */
+/* SMALL DEVICES (LANSCAPE PHONE, 576px and up) */
+/* MEDIUM DEVICES (TABLETS, 768px and up) */
+/* LARGE DEVICES (DESKTOPS, 992px and up) */
+/* EXTRA LARGE DEVICES (LARGE DESKTOPS, 1200px and up) */
+/* EXTRA EXTRA LARGE DEVICES (LARGE DESKTOPS, 1400px and up) */
+h1 {
+  color: green;
+}
+
+body {
+  background-color: cornflowerblue;
+}/*# sourceMappingURL=main.css.map */
