@@ -1,15 +1,36 @@
-a {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 15px 60px;
-  text-decoration: none;
-  color: inherit;
+.container {
+  margin: auto;
+  width: 90%;
+  // border: 1px solid;
+}
+
+.flex-wrapper, nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// body {
+//   background-color: $primary-clr;
+//   background-color: $secondary-clr;
+// }
+
+// Button
+.btn {
   border: 1px solid;
+  padding: 15px 40px;
   border-radius: 8px;
 
-  &:hover {
-    background-color: rgb(169, 178, 186);
-    color: cadetblue;
-    border: 1px solid cadetblue;
+  // &:hover {
+  //   background-color: $secondary-clr;
+  //   cursor: pointer;
+  // }
+
+  &:hover a {
+    color: $accent-clr;
   }
+}
+// Link
+a:hover {
+  color: $accent-clr;
 }

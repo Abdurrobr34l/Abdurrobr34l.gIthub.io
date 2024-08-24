@@ -5,19 +5,49 @@
   font-family: system-ui;
 }
 
-a {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 15px 60px;
+a, button {
+  font-weight: 600;
+  font-size: inherit;
   text-decoration: none;
-  color: inherit;
+  border: none;
+  color: #F7F7F7;
+  background-color: transparent;
+}
+a:hover, button:hover {
+  cursor: pointer;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  margin: auto;
+  width: 90%;
+}
+
+.flex-wrapper, nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn, header .header-btn {
   border: 1px solid;
+  padding: 15px 40px;
   border-radius: 8px;
 }
+.btn:hover a, header .header-btn:hover a {
+  color: #F1C40F;
+}
+
 a:hover {
-  background-color: rgb(169, 178, 186);
-  color: cadetblue;
-  border: 1px solid cadetblue;
+  color: #F1C40F;
 }
 
 /* EXTRA SMALL DEVICES (PORTRAIT PHONE, less than 576px) */
@@ -26,11 +56,14 @@ a:hover {
 /* LARGE DEVICES (DESKTOPS, 992px and up) */
 /* EXTRA LARGE DEVICES (LARGE DESKTOPS, 1200px and up) */
 /* EXTRA EXTRA LARGE DEVICES (LARGE DESKTOPS, 1400px and up) */
-h1 {
-  color: green;
+header {
+  background-color: #2C3E50;
 }
-
-body {
-  background-color: cornflowerblue;
-  border: 10px solid;
+header nav ul {
+  gap: 50px;
+}
+header .header-btn {
+  border: none;
+  padding: none;
+  border-radius: 8px;
 }/*# sourceMappingURL=main.css.map */

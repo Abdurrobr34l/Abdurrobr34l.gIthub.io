@@ -1,13 +1,20 @@
-@import './reset';
-@import './variables';
-@import './common';
-@import './media-query';
+@import "./reset";
+@import "./variables";
+@import "./common";
+@import "./media-query";
 
-h1 {
-  color: $primary-clr;
-}
+// Header Start
+header {
+  background-color: $primary-clr;
 
-body {
-  background-color: cornflowerblue;
-  border: 10px solid;
+  nav ul {
+    gap: 50px;
+  }
+
+  .header-btn {
+    border: none;
+    padding: none;
+    border-radius: 8px;
+    @extend .btn;
+  }
 }
