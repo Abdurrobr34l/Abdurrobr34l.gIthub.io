@@ -43,11 +43,11 @@ img {
   border-radius: 8px;
 }
 .btn:hover a, header .header-btn:hover a {
-  color: #F1C40F;
+  color: #ff6f61;
 }
 
 a:hover {
-  color: #F1C40F;
+  color: #ff6f61;
 }
 
 /* EXTRA SMALL DEVICES (PORTRAIT PHONE, less than 576px) */
@@ -56,8 +56,14 @@ a:hover {
 /* LARGE DEVICES (DESKTOPS, 992px and up) */
 /* EXTRA LARGE DEVICES (LARGE DESKTOPS, 1200px and up) */
 /* EXTRA EXTRA LARGE DEVICES (LARGE DESKTOPS, 1400px and up) */
+.box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid;
+}
+
 header {
-  background-color: #2C3E50;
+  background-color: #2c3e50;
 }
 header nav ul {
   gap: 50px;
