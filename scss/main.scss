@@ -140,22 +140,36 @@
   }
 }
 
-.jelly {
-  width: 200px; /* Set your image width */
-  animation: wobble 1s infinite; /* Set animation duration and infinite loop */
-}
-@keyframes wobble {
-  0%, 100% {
-      transform: translateY(0); /* Start position */
+.hero {
+  &__wrapper {
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    // grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
-  25% {
-      transform: translateY(-10px) rotate(-5deg); /* Move up */
+    .box {
+      // padding: 100px;
+      // background-color: red;
+      border: 1px solid;
+    }
+    .box1 {
+      // background-color: pink;
+      grid-area: 1 / 1 / 2 / 7;
+    }
+    .box2 {
+      // background-color: yellow;
+      grid-area: 1 / 7 / 2 / 12;
+    }
+    .social {
+      flex-direction: column;
+      justify-content: end;
+      align-items: end;
+      gap: 40px;
+      border: 1px solid #fff;
+
+      i {
+        font-size: 15px;
+      }
+    }
   }
-  50% {
-      transform: translateY(5px) rotate(5deg); /* Move down */
-  }
-  75% {
-      transform: translateY(-2px) rotate(-2deg); /* Minor adjustments */
-  }
-}
+
 // Hero End

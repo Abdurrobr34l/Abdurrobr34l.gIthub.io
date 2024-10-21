@@ -79,6 +79,10 @@ nav ul {
           align-items: center;
 }
 
+.grid {
+  display: grid;
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -226,46 +230,35 @@ nav ul {
   font-size: 18px;
 }
 
-.jelly {
-  width: 200px; /* Set your image width */
-  -webkit-animation: wobble 1s infinite;
-          animation: wobble 1s infinite; /* Set animation duration and infinite loop */
+.hero__wrapper {
+  grid-template-columns: repeat(12, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-
-@-webkit-keyframes wobble {
-  0%, 100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0); /* Start position */
-  }
-  25% {
-    -webkit-transform: translateY(-10px) rotate(-5deg);
-            transform: translateY(-10px) rotate(-5deg); /* Move up */
-  }
-  50% {
-    -webkit-transform: translateY(5px) rotate(5deg);
-            transform: translateY(5px) rotate(5deg); /* Move down */
-  }
-  75% {
-    -webkit-transform: translateY(-2px) rotate(-2deg);
-            transform: translateY(-2px) rotate(-2deg); /* Minor adjustments */
-  }
+.hero .box {
+  border: 1px solid;
 }
-
-@keyframes wobble {
-  0%, 100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0); /* Start position */
-  }
-  25% {
-    -webkit-transform: translateY(-10px) rotate(-5deg);
-            transform: translateY(-10px) rotate(-5deg); /* Move up */
-  }
-  50% {
-    -webkit-transform: translateY(5px) rotate(5deg);
-            transform: translateY(5px) rotate(5deg); /* Move down */
-  }
-  75% {
-    -webkit-transform: translateY(-2px) rotate(-2deg);
-            transform: translateY(-2px) rotate(-2deg); /* Minor adjustments */
-  }
+.hero .box1 {
+  grid-area: 1/1/2/7;
+}
+.hero .box2 {
+  grid-area: 1/7/2/12;
+}
+.hero .social {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  gap: 40px;
+  border: 1px solid #fff;
+}
+.hero .social i {
+  font-size: 15px;
 }
