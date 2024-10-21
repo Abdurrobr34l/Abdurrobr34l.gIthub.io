@@ -4,38 +4,78 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abdur Rob</title>
+  <!-- File Links -->
   <link rel="stylesheet" href="css/main.css">
-  <link rel="icon" type="image/x-icon" href="img/favicon/dec.png">
+  <link rel="stylesheet" href="css/media.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="img/favicon/fav.png">
+  <!-- Font-Awsome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+
   <!-- Header Start -->
-  <header>
-    <div class="container">
+  <header class="header">
+    <div class="container__header container">
       <div class="flex-wrapper">
-        <div class="logo">
-          <img src="img/favicon/dec.png" alt="It is abdurrobr34l  personal portfolio website logo">
+        <!-- Logo -->
+        <div class="header__logo">
+          <a href="index.html"><img src="img/logo/11.png" alt="it is abdurrobr34l website logo"></a>
+          <!-- <a href="index.html"><img src="img/logo/22.png" alt="it is abdurrobr34l website logo"></a> -->
         </div>
         <!-- Menus -->
-         <nav>
+         <nav class="header__nav">
           <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
          </nav>
-        <div class="header-btn btn">
-          <a href="#">Hire Me</a>
+         <!-- Header Button -->
+        <div class="header__btn">
+          <a href="#" class="btn">Hire Me</a>
         </div>
+        <!-- Hamburger Menu Icon -->
+         <div class="header__hamburgermenu-icon">
+          <i class="fa-solid fa-bars"></i>
+         </div>
       </div>
     </div>
   </header>
+
+  <!-- Hamburger Menu Start -->
+   <div class="hamburgermenu">
+    <div class="hamburgermenu__container container flex">
+      <!-- Menus -->
+    <nav class="hamburgermenu__nav flex">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+     </nav>
+     <!-- Header Button -->
+    <div class="hamburgermenu__btn header__btn">
+      <a href="#" class="btn">Hire Me</a>
+    </div>
+    </div>
+   </div>
+  <!-- Hamburger Menu End -->
   <!-- Header End -->
-<div class="box box-1"></div>
-<div class="box box-2"></div>
-<div class="box box-3"></div>
+
+  <!-- Hero Start -->
+   <!-- <section class="hero">
+    <div class="container">
+      <div class="flex-wrapper">
+        <h1>lol</h1>
+        <h2>bol</h2>
+      </div>
+    </div>
+   </section> -->
+  <!-- Hero End -->
 
   <script src="js/script.js"></script>
 </body>

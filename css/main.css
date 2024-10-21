@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: system-ui;
 }
 
 a, button {
@@ -26,50 +27,111 @@ img {
   height: auto;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  color: #f5f5f5;
+}
+
+.btn {
+  border: 1px solid;
+  padding: 15px 30px;
+  border-radius: 8px;
+}
+.btn:hover a {
+  color: #1abc9c;
+}
+
+a:hover {
+  color: #1abc9c;
+}
+
+i {
+  color: #f5f5f5;
+}
+i:hover {
+  color: #1abc9c;
+  cursor: pointer;
+}
+
 .container {
   margin: auto;
   width: 90%;
 }
 
-.flex-wrapper, nav ul {
+.flex-wrapper,
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.btn, header .header-btn {
-  border: 1px solid;
-  padding: 15px 40px;
-  border-radius: 8px;
-}
-.btn:hover a, header .header-btn:hover a {
-  color: #ff6f61;
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-a:hover {
-  color: #ff6f61;
+.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-/* EXTRA SMALL DEVICES (PORTRAIT PHONE, less than 576px) */
-/* SMALL DEVICES (LANSCAPE PHONE, 576px and up) */
-/* MEDIUM DEVICES (TABLETS, 768px and up) */
-/* LARGE DEVICES (DESKTOPS, 992px and up) */
-/* EXTRA LARGE DEVICES (LARGE DESKTOPS, 1200px and up) */
-/* EXTRA EXTRA LARGE DEVICES (LARGE DESKTOPS, 1400px and up) */
-.box {
-  width: 100px;
-  height: 100px;
-  border: 1px solid;
+.header {
+  padding: 5px 0;
+  height: 60px;
+  border: 1px solid white;
+  background-color: #1C2833;
 }
-
-header {
-  background-color: #2c3e50;
+.header__logo img {
+  height: 50px;
 }
-header nav ul {
+.header__nav ul {
   gap: 50px;
 }
-header .header-btn {
+.header__nav ul li a {
+  font-weight: 400;
+}
+.header__btn a {
+  padding: 15px 30px;
+  background-color: #1abc9c;
   border: none;
-  padding: none;
-  border-radius: 8px;
-}/*# sourceMappingURL=main.css.map */
+}
+.header__btn a:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+.header__hamburgermenu-icon {
+  display: none;
+}
+.header__hamburgermenu-icon i {
+  font-size: 30px;
+}
+
+.hamburgermenu {
+  height: calc(100vh - 60px);
+  background-color: #1C2833;
+}
+.hamburgermenu__container, .hamburgermenu__nav ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 60px;
+}
+.hamburgermenu__container {
+  padding: 50px 0;
+  border: 1px solid red;
+}

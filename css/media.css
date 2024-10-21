@@ -1,4 +1,22 @@
-p {
-  font-size: 30px;
-  color: brown;
-}/*# sourceMappingURL=media.css.map */
+/* EXTRA SMALL DEVICES (PORTRAIT PHONE, less than 576px) */
+/* SMALL DEVICES (LANSCAPE PHONE, 576px and up) */
+/* MEDIUM DEVICES (TABLETS, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .header__nav {
+    display: none;
+  }
+  .header__btn {
+    display: none;
+  }
+  .header__hamburgermenu-icon {
+    display: block;
+  }
+}
+/* LARGE DEVICES (DESKTOPS, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .header__nav ul {
+    gap: 30px;
+  }
+}
+/* EXTRA LARGE DEVICES (LARGE DESKTOPS, 1200px and up) */
+/* EXTRA EXTRA LARGE DEVICES (LARGE DESKTOPS, 1400px and up) */

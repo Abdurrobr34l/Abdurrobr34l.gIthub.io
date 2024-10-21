@@ -1,0 +1,59 @@
+// Font Family
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+// Text
+p {
+  color: $text-clr;
+}
+
+// Button
+.btn {
+  border: 1px solid;
+  padding: 15px 30px;
+  border-radius: 8px;
+
+  &:hover a {
+    color: $accent-clr;
+  }
+}
+
+// Link
+a:hover {
+  color: $accent-clr;
+}
+
+// Icon
+i {
+  color: $text-clr;
+
+  &:hover {
+    color: $accent-clr;
+    cursor: pointer;
+  }
+}
+
+// Common Blocks
+.container {
+  margin: auto;
+  width: 90%;
+  // border: 1px solid red;
+}
+
+.flex-wrapper,
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
