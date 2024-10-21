@@ -36,14 +36,42 @@
     display: none;
 
     i {
-      font-size: 30px;
+      font-size: 33px;
     }
+
+    .fa-xmark {
+      display: none;
+    }
+
   }
 }
 
-.hamburgermenu {
+// Hamburger Menu
+.hamburgermenu { 
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   height: calc(100vh - 60px);
   background-color: $primary-clr;
+  transform: translateY(-100%); 
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 100; 
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0); /* Slide into view */
+  }
+
+  &.inactive {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-100%); /* Slide out of view */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  }
 
   &__container, 
   &__nav ul {
@@ -54,29 +82,80 @@
 
   &__container {
     padding: 50px 0;
-    border: 1px solid red;
   }
 
-  // &__btn a{
-  //   padding: 15px 30px;
-  //   background-color: $accent-clr;
-  //   border: none;
+  &__btn {
+    display: block !important;
+  }
 
-  //   &:hover {
-  //     background-color: $text-clr;
-  //     cursor: pointer;
-  //   }
-  // }
-  // &__nav {}
+}
+// this below codes are related to shoing and not showing icons
+.menu-open .fa-bars-staggered {
+  display: none;
+}
+
+.menu-open .fa-xmark {
+  display: block;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 // Header End
 
 // Hero Start
-// .hero {
-//   background-color: $primary-clr;
+.hero {
+  background-color: $primary-clr;
 
-//   .container {
-//     height: calc(100vh - 40px);
-//   }
-// }
+  &__container {
+    height: calc(100vh - 120px);
+    place-content: center;
+  }
+
+  &__wrapper {
+    border: 1px solid greenyellow;
+  }
+
+  &__content {
+    width: 50%;
+    border: 1px solid #fff;
+  }
+
+  &__image {
+    justify-content: space-between;
+    width: 50%;
+    border: 1px solid #fff;
+
+    .social {
+      flex-direction: column;
+      justify-content: end;
+      align-items: center;
+      gap: 30px;
+      border: 1px solid #fff;
+
+      i {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.jelly {
+  width: 200px; /* Set your image width */
+  animation: wobble 1s infinite; /* Set animation duration and infinite loop */
+}
+@keyframes wobble {
+  0%, 100% {
+      transform: translateY(0); /* Start position */
+  }
+  25% {
+      transform: translateY(-10px) rotate(-5deg); /* Move up */
+  }
+  50% {
+      transform: translateY(5px) rotate(5deg); /* Move down */
+  }
+  75% {
+      transform: translateY(-2px) rotate(-2deg); /* Minor adjustments */
+  }
+}
 // Hero End

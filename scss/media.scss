@@ -1,18 +1,62 @@
 /* EXTRA SMALL DEVICES (PORTRAIT PHONE, less than 576px) */
 @media (max-width: 575.98px) {
+  // HEADER START
+  .header {
+    padding: 10px 0;
+    height: 55px;
+
+    &__logo img {
+      height: 35px;
+    }
+
+    &__nav {
+      display: none;
+    }
+
+    &__btn {
+      display: none;
+    }
+
+    &__hamburgermenu-icon {
+      display: block;
+
+      i {
+        font-size: 30px;
+      }
+    }
+  }
+  // Hamburger Menu
+  .hamburgermenu {
+    height: calc(100vh - 55px);
+  }
+  // HEADER END
 }
 
 /* SMALL DEVICES (LANSCAPE PHONE, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+  // HEADER START
+  .header {
+    &__nav {
+      display: none;
+    }
+
+    &__btn {
+      display: none;
+    }
+
+    &__hamburgermenu-icon {
+      display: block;
+    }
+  }
+  // HEADER END
 }
 
 /* MEDIUM DEVICES (TABLETS, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
   // HEADER START
   .header {
-
     &__nav {
-        display: none;
+      display: none;
     }
 
     &__btn {
@@ -28,12 +72,13 @@
 
 /* LARGE DEVICES (DESKTOPS, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  // HEADER START
   .header {
-
     &__nav ul {
       gap: 30px;
     }
   }
+  // HEADER END
 }
 
 /* EXTRA LARGE DEVICES (LARGE DESKTOPS, 1200px and up) */

@@ -31,6 +31,10 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.hero {
+  padding: 30px 0;
+}
+
 p {
   color: #f5f5f5;
 }
@@ -59,6 +63,7 @@ i:hover {
 .container {
   margin: auto;
   width: 90%;
+  border: 1px solid red;
 }
 
 .flex-wrapper,
@@ -114,12 +119,44 @@ nav ul {
   display: none;
 }
 .header__hamburgermenu-icon i {
-  font-size: 30px;
+  font-size: 33px;
+}
+.header__hamburgermenu-icon .fa-xmark {
+  display: none;
 }
 
 .hamburgermenu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   height: calc(100vh - 60px);
   background-color: #1C2833;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 100;
+}
+.hamburgermenu.active {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+          transform: translateY(0); /* Slide into view */
+}
+.hamburgermenu.inactive {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%); /* Slide out of view */
+  -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease; /* Smooth transition */
 }
 .hamburgermenu__container, .hamburgermenu__nav ul {
   -webkit-box-orient: vertical;
@@ -133,5 +170,102 @@ nav ul {
 }
 .hamburgermenu__container {
   padding: 50px 0;
-  border: 1px solid red;
+}
+.hamburgermenu__btn {
+  display: block !important;
+}
+
+.menu-open .fa-bars-staggered {
+  display: none;
+}
+
+.menu-open .fa-xmark {
+  display: block;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.hero {
+  background-color: #1C2833;
+}
+.hero__container {
+  height: calc(100vh - 120px);
+  place-content: center;
+}
+.hero__wrapper {
+  border: 1px solid greenyellow;
+}
+.hero__content {
+  width: 50%;
+  border: 1px solid #fff;
+}
+.hero__image {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+  border: 1px solid #fff;
+}
+.hero__image .social {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  border: 1px solid #fff;
+}
+.hero__image .social i {
+  font-size: 18px;
+}
+
+.jelly {
+  width: 200px; /* Set your image width */
+  -webkit-animation: wobble 1s infinite;
+          animation: wobble 1s infinite; /* Set animation duration and infinite loop */
+}
+
+@-webkit-keyframes wobble {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); /* Start position */
+  }
+  25% {
+    -webkit-transform: translateY(-10px) rotate(-5deg);
+            transform: translateY(-10px) rotate(-5deg); /* Move up */
+  }
+  50% {
+    -webkit-transform: translateY(5px) rotate(5deg);
+            transform: translateY(5px) rotate(5deg); /* Move down */
+  }
+  75% {
+    -webkit-transform: translateY(-2px) rotate(-2deg);
+            transform: translateY(-2px) rotate(-2deg); /* Minor adjustments */
+  }
+}
+
+@keyframes wobble {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); /* Start position */
+  }
+  25% {
+    -webkit-transform: translateY(-10px) rotate(-5deg);
+            transform: translateY(-10px) rotate(-5deg); /* Move up */
+  }
+  50% {
+    -webkit-transform: translateY(5px) rotate(5deg);
+            transform: translateY(5px) rotate(5deg); /* Move down */
+  }
+  75% {
+    -webkit-transform: translateY(-2px) rotate(-2deg);
+            transform: translateY(-2px) rotate(-2deg); /* Minor adjustments */
+  }
 }
