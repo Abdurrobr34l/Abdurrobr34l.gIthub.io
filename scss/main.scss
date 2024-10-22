@@ -17,7 +17,7 @@
     gap: 50px;
 
     li a {
-     font-weight: 400;
+      font-weight: 400;
     }
   }
 
@@ -42,23 +42,22 @@
     .fa-xmark {
       display: none;
     }
-
   }
 }
 
 // Hamburger Menu
-.hamburgermenu { 
+.hamburgermenu {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
   height: calc(100vh - 60px);
   background-color: $primary-clr;
-  transform: translateY(-100%); 
+  transform: translateY(-100%);
   transition: opacity 0.3s ease, transform 0.3s ease;
   opacity: 0;
   visibility: hidden;
-  z-index: 100; 
+  z-index: 100;
 
   &.active {
     opacity: 1;
@@ -73,7 +72,7 @@
     transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
   }
 
-  &__container, 
+  &__container,
   &__nav ul {
     flex-direction: column;
     align-items: center;
@@ -87,7 +86,6 @@
   &__btn {
     display: block !important;
   }
-
 }
 // this below codes are related to shoing and not showing icons
 .menu-open .fa-bars-staggered {
@@ -113,63 +111,95 @@
   }
 
   &__wrapper {
-    border: 1px solid greenyellow;
+    // border: 1px solid greenyellow;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+  }
+
+  .box {
+    // border: 1px solid;
   }
 
   &__content {
-    width: 50%;
-    border: 1px solid #fff;
-  }
+    grid-area: 1 / 1 / 2 / 7;
 
-  &__image {
-    justify-content: space-between;
-    width: 50%;
-    border: 1px solid #fff;
+    h1 {
+      font-size: clamp(24px, 5.56vw, 90px);
+      width: 5ch;
+      line-height: 80px;
+      color: $text-clr;
+      
+      color: transparent;
+      -webkit-text-stroke: 1px $accent-clr;
+    }
 
-    .social {
-      flex-direction: column;
-      justify-content: end;
-      align-items: center;
-      gap: 30px;
-      border: 1px solid #fff;
+    p {
+      margin: 20px 0 50px;
+      line-height: 25px;
 
-      i {
-        font-size: 18px;
+      span {
+        font-weight: 700;
+        color: $accent-clr;
+        // text-transform: uppercase;
+        // -webkit-text-stroke: 1px $accent-clr;
       }
     }
   }
-}
 
-.hero {
-  &__wrapper {
-    grid-template-columns: repeat(12, 1fr);
-    align-items: center;
-    // grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  &__image {
+    grid-area: 1 / 7 / 2 / 12;
   }
-    .box {
-      // padding: 100px;
-      // background-color: red;
-      border: 1px solid;
-    }
-    .box1 {
-      // background-color: pink;
-      grid-area: 1 / 1 / 2 / 7;
-    }
-    .box2 {
-      // background-color: yellow;
-      grid-area: 1 / 7 / 2 / 12;
-    }
+
+  &__social {
+    align-self: end;
+
     .social {
       flex-direction: column;
       justify-content: end;
       align-items: end;
       gap: 40px;
-      border: 1px solid #fff;
+      // border: 1px solid #fff;
 
       i {
         font-size: 15px;
       }
     }
   }
+}
+
+// .hero {
+//   &__wrapper {
+//     grid-template-columns: repeat(12, 1fr);
+//     align-items: center;
+//     // grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+//   }
+//     .box {
+//       // padding: 100px;
+//       // background-color: red;
+//       border: 1px solid;
+//     }
+//     .box1 {
+//       // background-color: pink;
+//       grid-area: 1 / 1 / 2 / 7;
+//     }
+//     .box2 {
+//       // background-color: yellow;
+//       grid-area: 1 / 7 / 2 / 12;
+//     }
+//     .box3 {
+//       align-self: end;
+//     }
+//     .social {
+//       flex-direction: column;
+//       justify-content: end;
+//       align-items: end;
+//       gap: 40px;
+//       border: 1px solid #fff;
+
+//       i {
+//         font-size: 15px;
+//       }
+//     }
+//   }
 
 // Hero End
