@@ -111,24 +111,17 @@
   }
 
   &__wrapper {
-    // border: 1px solid greenyellow;
     grid-template-columns: repeat(12, 1fr);
     align-items: center;
-  }
-
-  .box {
-    // border: 1px solid;
   }
 
   &__content {
     grid-area: 1 / 1 / 2 / 7;
 
     h1 {
-      font-size: clamp(24px, 5.56vw, 90px);
+      font-size: clamp(42px, 5.56vw, 90px);
       width: 5ch;
-      line-height: 80px;
-      color: $text-clr;
-      
+      line-height: 1;
       color: transparent;
       -webkit-text-stroke: 1px $accent-clr;
     }
@@ -140,14 +133,17 @@
       span {
         font-weight: 700;
         color: $accent-clr;
-        // text-transform: uppercase;
-        // -webkit-text-stroke: 1px $accent-clr;
       }
     }
   }
 
   &__image {
     grid-area: 1 / 7 / 2 / 12;
+
+    img {
+      border: 5px solid $accent-clr;
+      border-radius: 50%;
+    }
   }
 
   &__social {

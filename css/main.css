@@ -207,10 +207,9 @@ nav ul {
   grid-area: 1/1/2/7;
 }
 .hero__content h1 {
-  font-size: clamp(24px, 5.56vw, 90px);
+  font-size: clamp(42px, 5.56vw, 90px);
   width: 5ch;
-  line-height: 80px;
-  color: #f5f5f5;
+  line-height: 1;
   color: transparent;
   -webkit-text-stroke: 1px #1abc9c;
 }
@@ -224,6 +223,10 @@ nav ul {
 }
 .hero__image {
   grid-area: 1/7/2/12;
+}
+.hero__image img {
+  border: 5px solid #1abc9c;
+  border-radius: 50%;
 }
 .hero__social {
   -ms-flex-item-align: end;
