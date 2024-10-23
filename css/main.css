@@ -108,6 +108,7 @@ nav ul {
   height: 70px;
   place-content: end;
   background-color: #1C2833;
+  z-index: 200;
 }
 .header__logo img {
   height: 50px;
@@ -137,7 +138,7 @@ nav ul {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 70px);
   background-color: #1C2833;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
@@ -150,6 +151,7 @@ nav ul {
   z-index: 100;
 }
 .hamburgermenu.active {
+  bottom: 0;
   opacity: 1;
   visibility: visible;
   -webkit-transform: translateY(0);
@@ -195,11 +197,9 @@ nav ul {
 }
 
 .hero {
-  height: calc(100vh - 70px);
-  background-color: #1C2833;
-}
-.hero__container {
   place-content: center;
+  height: 100vh;
+  background-color: #1C2833;
 }
 .hero__wrapper {
   grid-template-columns: repeat(12, 1fr);
@@ -241,12 +241,9 @@ nav ul {
   grid-area: 1/7/2/12;
 }
 .hero__image img {
+  width: 100%;
   border: 5px solid #1abc9c;
   border-radius: 50%;
-}
-.hero__social {
-  -ms-flex-item-align: end;
-      align-self: end;
 }
 .hero__social .social {
   -webkit-box-orient: vertical;

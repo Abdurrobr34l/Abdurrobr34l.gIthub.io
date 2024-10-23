@@ -6,8 +6,9 @@
 .header {
   height: 70px;
   place-content: end;
-  // border: 1px solid white;
+  // border: 1px solid green;
   background-color: $primary-clr;
+  z-index: 200;
 
   &__logo img {
     height: 50px;
@@ -45,7 +46,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 70px);
   background-color: $primary-clr;
   transform: translateY(-100%);
   transition: opacity 0.3s ease, transform 0.3s ease;
@@ -54,6 +55,7 @@
   z-index: 100;
 
   &.active {
+    bottom: 0;
     opacity: 1;
     visibility: visible;
     transform: translateY(0); /* Slide into view */
@@ -97,13 +99,9 @@
 
 // Hero Start
 .hero {
-  // padding: 30px 0;
-  height: calc(100vh - 70px);
+  place-content: center;
+  height: 100vh;
   background-color: $primary-clr;
-
-  &__container {
-    place-content: center;
-  }
 
   &__wrapper {
     grid-template-columns: repeat(12, 1fr);
@@ -153,14 +151,15 @@
     grid-area: 1 / 7 / 2 / 12;
 
     img {
-      // width: 100%;
+      width: 100%;
+      // height: 500px;
       border: 5px solid $accent-clr;
       border-radius: 50%;
     }
   }
 
   &__social {
-    align-self: end;
+    // align-self: end;
 
     .social {
       flex-direction: column;

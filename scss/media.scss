@@ -1,5 +1,11 @@
 /* EXTRA SMALL DEVICES (PORTRAIT PHONE, less than 576px) */
 @media (max-width: 575.98px) {
+  // COMMON CSS START 
+  .btn {
+    padding: 13px 15px;
+  }
+  // COMMON CSS END 
+
   // HEADER START
   .header {
     padding: 10px 0;
@@ -21,20 +27,22 @@
       display: block;
 
       i {
-        font-size: 30px;
+        font-size: 28px;
       }
     }
   }
   // Hamburger Menu
   .hamburgermenu {
-    height: calc(100vh - 55px);
+    height: calc(100svh - 55px);
   }
   // HEADER END
 
   // HERO START
   .hero {
-    &__container {
-      height: calc(100vh + 20px);
+    height: 100%;
+
+    &.section-padding {
+      padding: 40px 0;
     }
 
     &__wrapper {
@@ -50,6 +58,7 @@
       }
 
       p {
+        margin: 20px 0 40px;
         width: 100%;
         line-height: 27px;
       }
@@ -87,8 +96,10 @@
 
   // HERO START
   .hero {
-    &__container {
-      height: calc(100vh + 100px);
+    height: 100%;
+
+    &.section-padding {
+      padding: 50px 0;
     }
 
     &__wrapper {
@@ -139,9 +150,7 @@
 
   // HERO START
   .hero {
-    &__container {
-      height: calc(100vh + 150px);
-    }
+     height: 100%;
 
     &__wrapper {
       grid-gap: 40px;
@@ -149,14 +158,20 @@
 
     &__content {
       grid-area: 2/1/3/13;
-
-      h1 {
-        width: 10ch;
-      }
+      text-align: center;
     }
 
+      h1 {
+        margin: 0 auto;
+        width: 10ch;
+      }
+
+      p {
+        margin: 20px auto 50px;
+      }
+
     &__image {
-      grid-area: 1/1/1/11;
+      grid-area: 1/3/1/11;
     }
 
     &__social {
@@ -169,6 +184,12 @@
 
 /* LARGE DEVICES (DESKTOPS, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  // COMMON CSS START
+  .section-padding  {
+    padding: 20px 0;
+  } 
+  // COMMON CSS END
+
   // HEADER START
   .header {
     &__nav ul {
@@ -176,6 +197,12 @@
     }
   }
   // HEADER END
+
+// HERO START
+.hero {
+  place-content: center;
+}
+// HERO END
 }
 
 /* EXTRA LARGE DEVICES (LARGE DESKTOPS, 1200px and up) */
