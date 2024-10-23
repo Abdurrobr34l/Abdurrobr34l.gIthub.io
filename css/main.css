@@ -326,5 +326,18 @@ nav ul {
   grid-row: 10/13;
 }
 .about__skill i {
+  border: 1px solid;
+  font-size: 20px;
+  color: #1C2833;
+}
+.about__skill .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+.about__skill .icon i {
+  border: 1px solid;
+  font-size: 40px;
   color: #1C2833;
 }

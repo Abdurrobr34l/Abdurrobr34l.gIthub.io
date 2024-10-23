@@ -235,8 +235,19 @@
     grid-row: 10 / 13;
 
     i {
+      border: 1px solid;
+      font-size: 20px;
       color: $primary-clr;
     }
+
+    .icon {
+      display: flex;
+      gap: 30px;
+      i {
+      border: 1px solid;
+      font-size: 40px;
+      color: $primary-clr;
+    }}
   }
 }
 // About Me End
