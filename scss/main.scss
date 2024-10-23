@@ -4,11 +4,13 @@
 
 // Header Start
 .header {
+  padding-bottom: 8px;
+  width: 100%;
   height: 70px;
   place-content: end;
-  // border: 1px solid green;
   background-color: $primary-clr;
   z-index: 200;
+  transition: backdrop-filter 0.3s ease;
 
   &__logo img {
     height: 50px;
@@ -39,7 +41,11 @@
     }
   }
 }
-
+.scrolled {
+  background: #1c2833a8;
+  backdrop-filter: blur(7.9px);
+  -webkit-backdrop-filter: blur(7.9px);
+}
 // Hamburger Menu
 .hamburgermenu {
   position: fixed;
@@ -83,7 +89,7 @@
     display: block !important;
   }
 }
-// this below codes are related to shoing and not showing icons
+// this below codes are related to showing and not showing icons
 .menu-open .fa-bars-staggered {
   display: none;
 }
@@ -131,7 +137,6 @@
     }
 
     a {
-
       &:not(:last-child) {
         margin-right: 10px;
         color: $accent-clr;
@@ -174,40 +179,64 @@
     }
   }
 }
-
-// .hero {
-//   &__wrapper {
-//     grid-template-columns: repeat(12, 1fr);
-//     align-items: center;
-//     // grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-//   }
-//     .box {
-//       // padding: 100px;
-//       // background-color: red;
-//       border: 1px solid;
-//     }
-//     .box1 {
-//       // background-color: pink;
-//       grid-area: 1 / 1 / 2 / 7;
-//     }
-//     .box2 {
-//       // background-color: yellow;
-//       grid-area: 1 / 7 / 2 / 12;
-//     }
-//     .box3 {
-//       align-self: end;
-//     }
-//     .social {
-//       flex-direction: column;
-//       justify-content: end;
-//       align-items: end;
-//       gap: 40px;
-//       border: 1px solid #fff;
-
-//       i {
-//         font-size: 15px;
-//       }
-//     }
-//   }
-
 // Hero End
+
+// About Me Start
+.about {
+  // height: calc(100vh - 70px);
+  height: 100vh;
+  place-content: center;
+
+  &__container {
+    border: 1px solid green;
+  }
+
+  &__image {
+    flex: 1;
+  }
+
+  &__content {
+    flex: 1;
+    grid-template-rows: repeat(12, 1fr);
+    grid-gap: 10px;
+  }
+
+  &__text {
+    padding: 20px 0;
+    border: 3px solid;
+    grid-row: 1 / 10;
+    
+  .typewrite {
+    font-size: 20px;
+    font-weight: 700;
+    color: $accent-clr;
+    border-right: 4px solid $accent-clr;
+  }
+
+    p {
+      margin: 20px 0 30px;
+      font-weight: 500;
+      color: $primary-clr;
+      line-height: 25px;
+    }
+
+    &-btn {
+
+      &:hover {
+        background-color: $primary-clr;
+        border: 1px solid transparent;
+      }
+    }
+  }
+
+  &__skill {
+    align-content: center;
+    border: 3px solid;
+    grid-row: 10 / 13;
+
+    i {
+      color: $primary-clr;
+    }
+  }
+}
+// About Me End

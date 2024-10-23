@@ -14,6 +14,11 @@ html {
   padding: 50px 0 30px;
 }
 
+// Section BG Color 
+.about {
+  background-color: $section-bg-clr;
+}
+
 // Text
 p {
   color: $text-clr;
@@ -21,6 +26,7 @@ p {
 
 // Button
 .btn {
+  display: inline-block;
   padding: 15px 30px;
   color: $primary-clr;
   background-color: $accent-clr;

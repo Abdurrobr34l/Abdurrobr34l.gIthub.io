@@ -103,6 +103,7 @@
     display: block;
   }
   .hero {
+    border: 2px solid green;
     height: 100%;
   }
   .hero__wrapper {
