@@ -4,9 +4,9 @@
 
 // Header Start
 .header {
-  padding: 5px 0;
-  height: 60px;
-  border: 1px solid white;
+  height: 70px;
+  place-content: end;
+  // border: 1px solid white;
   background-color: $primary-clr;
 
   &__logo img {
@@ -22,14 +22,8 @@
   }
 
   &__btn a {
-    padding: 15px 30px;
-    background-color: $accent-clr;
-    border: none;
-
-    &:hover {
-      background-color: $text-clr;
-      cursor: pointer;
-    }
+    padding: 15px 35px;
+    font-weight: 700;
   }
 
   &__hamburgermenu-icon {
@@ -103,10 +97,11 @@
 
 // Hero Start
 .hero {
+  // padding: 30px 0;
+  height: calc(100vh - 70px);
   background-color: $primary-clr;
 
   &__container {
-    height: calc(100vh - 120px);
     place-content: center;
   }
 
@@ -128,11 +123,28 @@
 
     p {
       margin: 20px 0 50px;
+      width: 85%;
       line-height: 25px;
 
       span {
         font-weight: 700;
         color: $accent-clr;
+      }
+    }
+
+    a {
+
+      &:not(:last-child) {
+        margin-right: 10px;
+        color: $accent-clr;
+        background-color: transparent;
+        border-color: $accent-clr;
+
+        &:hover {
+          color: $primary-clr;
+          background-color: $accent-clr;
+          border-color: transparent;
+        }
       }
     }
   }
@@ -141,6 +153,7 @@
     grid-area: 1 / 7 / 2 / 12;
 
     img {
+      // width: 100%;
       border: 5px solid $accent-clr;
       border-radius: 50%;
     }

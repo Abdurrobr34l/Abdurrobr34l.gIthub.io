@@ -1,13 +1,17 @@
 // Font Family
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
   font-family: "Montserrat", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 // Section Padding
-.hero {
-  padding: 30px 0;
+.section-padding {
+  padding: 50px 0 30px;
 }
 
 // Text
@@ -17,12 +21,17 @@ p {
 
 // Button
 .btn {
-  border: 1px solid;
   padding: 15px 30px;
+  color: $primary-clr;
+  background-color: $accent-clr;
+  border: 1px solid transparent;
   border-radius: 8px;
+  transition: .3s ease-in-out;
 
-  &:hover a {
+  &:hover {
     color: $accent-clr;
+    background-color: transparent;
+    border-color: $accent-clr;
   }
 }
 
