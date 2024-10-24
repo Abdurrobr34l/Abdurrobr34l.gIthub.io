@@ -3,6 +3,9 @@
   .btn {
     padding: 13px 15px;
   }
+  .container {
+    width: 95%;
+  }
   .header {
     padding: 10px 0;
     height: 55px;
@@ -48,10 +51,33 @@
   }
   .hero__image {
     grid-area: 1/1/1/12;
-    padding: 0 13px 0 0;
+  }
+  .hero__image img {
+    width: 100%;
   }
   .hero__social {
     display: none;
+  }
+  .about {
+    height: 100%;
+  }
+  .about__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about__left-social i {
+    font-size: 30px;
+  }
+  .about__right {
+    gap: 10px;
+  }
+  .about__right-skill {
+    padding: 30px 0;
+  }
+  .about__right-skill .icon i {
+    font-size: 35px;
   }
 }
 /* SMALL DEVICES (LANSCAPE PHONE, 576px and up) */
@@ -90,6 +116,18 @@
     grid-area: 1/12;
     align-self: center;
   }
+  .about {
+    height: 100%;
+  }
+  .about__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about__left-social i {
+    font-size: 30px;
+  }
 }
 /* MEDIUM DEVICES (TABLETS, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -126,6 +164,18 @@
   .hero__social {
     grid-area: 1/12;
     align-self: center;
+  }
+  .about {
+    height: 100%;
+  }
+  .about__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about__left-social i {
+    font-size: 30px;
   }
 }
 /* LARGE DEVICES (DESKTOPS, 992px and up) */

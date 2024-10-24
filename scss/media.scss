@@ -1,10 +1,14 @@
 /* EXTRA SMALL DEVICES (PORTRAIT PHONE, less than 576px) */
 @media (max-width: 575.98px) {
-  // COMMON CSS START 
+  // COMMON CSS START
   .btn {
     padding: 13px 15px;
   }
-  // COMMON CSS END 
+
+  .container {
+    width: 95%;
+  }
+  // COMMON CSS END
 
   // HEADER START
   .header {
@@ -66,7 +70,10 @@
 
     &__image {
       grid-area: 1 / 1 / 1 / 12;
-      padding: 0 13px 0 0;
+      
+      img {
+        width: 100%;
+      }
     }
 
     &__social {
@@ -74,7 +81,35 @@
     }
   }
   // HERO END
+
+  // ABOUT START
+  .about {
+    height: 100%;
+
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__left {
+      &-social i {
+        font-size: 30px;
+      }
+    }
+
+    &__right {
+      gap: 10px;
+
+      &-skill {
+        padding: 30px 0;
+
+        .icon i {
+          font-size: 35px;
+        }
+      }
+    }
+  }
 }
+// ABOUT END
 
 /* SMALL DEVICES (LANSCAPE PHONE, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -128,6 +163,20 @@
     }
   }
   // HERO END
+
+  // ABOUT START
+  .about {
+    height: 100%;
+
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__left-social i {
+      font-size: 30px;
+    }
+  }
+  // ABOUT END
 }
 
 /* MEDIUM DEVICES (TABLETS, 768px and up) */
@@ -151,7 +200,7 @@
   // HERO START
   .hero {
     border: 2px solid green;
-     height: 100%;
+    height: 100%;
 
     &__wrapper {
       grid-gap: 40px;
@@ -162,14 +211,14 @@
       text-align: center;
     }
 
-      h1 {
-        margin: 0 auto;
-        width: 10ch;
-      }
+    h1 {
+      margin: 0 auto;
+      width: 10ch;
+    }
 
-      p {
-        margin: 20px auto 50px;
-      }
+    p {
+      margin: 20px auto 50px;
+    }
 
     &__image {
       grid-area: 1/3/1/11;
@@ -181,14 +230,28 @@
     }
   }
   // HERO END
+
+  // ABOUT START
+  .about {
+    height: 100%;
+
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__left-social i {
+      font-size: 30px;
+    }
+  }
+  // ABOUT END
 }
 
 /* LARGE DEVICES (DESKTOPS, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
   // COMMON CSS START
-  .section-padding  {
+  .section-padding {
     padding: 20px 0;
-  } 
+  }
   // COMMON CSS END
 
   // HEADER START
@@ -199,11 +262,11 @@
   }
   // HEADER END
 
-// HERO START
-.hero {
-  place-content: center;
-}
-// HERO END
+  // HERO START
+  .hero {
+    place-content: center;
+  }
+  // HERO END
 }
 
 /* EXTRA LARGE DEVICES (LARGE DESKTOPS, 1200px and up) */
