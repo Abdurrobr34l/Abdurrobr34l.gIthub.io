@@ -14,7 +14,12 @@ html {
   padding: 50px 0 30px;
 }
 
-// Section BG Color 
+// Section Common BG Color
+.header,
+.hero,
+.project {
+  background-color: $primary-clr;
+}
 .about {
   background-color: $section-bg-clr;
 }
@@ -32,7 +37,7 @@ p {
   background-color: $accent-clr;
   border: 1px solid transparent;
   border-radius: 8px;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 
   &:hover {
     color: $accent-clr;
@@ -51,9 +56,33 @@ i {
   color: $text-clr;
 
   &:hover {
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
     color: $accent-clr;
     cursor: pointer;
+  }
+}
+
+// Go-To-Top Button
+.go-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 8px;
+  width: 40px;
+  height: 45px;
+  background-color: $accent-clr;
+  color: $primary-clr;
+  border-radius: 50%;
+  opacity: 0.8;
+  display: none;
+  text-align: center;
+  font-size: 24px;
+
+  &:hover {
+    color: $accent-clr;
+    outline:  2px solid $accent-clr;
+    background-color: $primary-clr;
+    opacity: 1;
   }
 }
 

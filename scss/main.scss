@@ -8,7 +8,6 @@
   width: 100%;
   height: 70px;
   place-content: end;
-  background-color: $primary-clr;
   z-index: 200;
   transition: backdrop-filter 0.3s ease;
 
@@ -107,7 +106,6 @@
 .hero {
   place-content: center;
   height: 100vh;
-  background-color: $primary-clr;
 
   &__wrapper {
     grid-template-columns: repeat(12, 1fr);
@@ -182,95 +180,7 @@
 // Hero End
 
 // About Me Start
-// .about {
-//   height: calc(100vh - auto);
-//   // height: 100vh;
-//   // place-content: center;
-
-//   &__container {
-//     // border: 1px solid green;
-//   }
-
-//   &__wrapper {
-//     // align-items: start;
-//     gap: 50px;
-//   }
-
-//   &__image {
-//     flex: 1;
-
-//     img {
-//       width: 100%;
-//       // object-fit: scale-down;
-//     }
-
-//     .social i {
-//       color: green;
-//     }
-//   }
-
-//   &__content {
-//     flex: 2;
-//     grid-template-rows: repeat(10, 1fr);
-//     // grid-gap: 10px;
-//   }
-
-//   &__text {
-//     padding: 20px 0;
-//     // border: 3px solid;
-//     grid-row: 1 / 9;
-
-//   .typewrite {
-//     font-size: 20px;
-//     font-weight: 700;
-//     color: $accent-clr;
-//     border-right: 4px solid $accent-clr;
-//   }
-
-//     p {
-//       margin: 20px 0 30px;
-//       font-weight: 500;
-//       color: $primary-clr;
-//       line-height: 25px;
-//     }
-
-//     &-btn {
-
-//       &:hover {
-//         background-color: $primary-clr;
-//         border: 1px solid transparent;
-//       }
-//     }
-//   }
-
-//   &__skill {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     // align-content: center;
-//     // border: 3px solid;
-//     grid-row: 9 / 11;
-
-//     i {
-//       border: 1px solid;
-//       // font-size: 20px;
-//       color: $primary-clr;
-//     }
-
-//     .icon {
-//       // display: flex;
-//       // gap: 30px;
-
-//       i {
-//       border: 1px solid;
-//       // font-size: 40px;
-//       color: $primary-clr;
-//     }}
-//   }
-// }
-
 .about {
-  // height: calc(100vh - auto);
   height: 100vh;
     place-content: center;
 
@@ -284,12 +194,10 @@
     flex-direction: column;
     gap: 20px;
     height: fit-content;
-    // justify-content: space-between;
   }
 
   &__left {
     flex: 1;
-    // background-color: yellow;
 
     &-image {
       img {
@@ -314,10 +222,8 @@
 
   &__right {
     flex: 2;
-    // background-color: pink;
 
     &-text {
-      // flex: 1;
 
       .wrap h2 {
         font-size: clamp(24px, 4vw + 1rem, 35px);
@@ -351,8 +257,6 @@
       position: relative;
       align-items: center;
       padding: 40px 0 30px;
-        // width: 600px;
-        // border: 2px solid;
       mask-image: linear-gradient( to right,rgba(0, 0, 0, 0),
         rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0));
 
@@ -442,3 +346,9 @@
   }
 }
 // About Me End
+
+// Project Start 
+.project {
+  height: 100vh;
+}
+// Project End 
