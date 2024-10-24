@@ -80,7 +80,6 @@ i:hover {
 .container {
   margin: 0 auto;
   width: 90%;
-  border: 1px solid red;
 }
 
 .flex-wrapper,
