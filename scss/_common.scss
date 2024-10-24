@@ -51,6 +51,7 @@ i {
   color: $text-clr;
 
   &:hover {
+    transition: .3s ease-in-out;
     color: $accent-clr;
     cursor: pointer;
   }
