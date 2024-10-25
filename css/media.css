@@ -1,10 +1,35 @@
-/* EXTRA SMALL DEVICES (PORTRAIT PHONE, less than 576px) */
+/* MOBILE (S) DEVICES (PHONE, less than 375px) */
+@media (max-width: 374.98px) {
+  .hero__wrapper {
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 28px !important;
+  }
+  .hero__content {
+    grid-area: 2/1/2/8;
+    width: 100%;
+    text-align: center;
+  }
+  .hero__content h1 {
+    margin: 0 auto;
+    width: 10ch;
+  }
+  .hero__content p {
+    margin: 20px 0 40px;
+    padding: 0 5px;
+    width: 100%;
+    line-height: 27px;
+  }
+  .hero__image {
+    grid-area: 1/1/1/12;
+  }
+}
+/* MOBILE (L - M) DEVICES (PORTRAIT PHONE, less than 576px) */
 @media (max-width: 575.98px) {
   .btn {
     padding: 13px 15px;
   }
   .container {
-    width: 95%;
+    border: 1px solid cyan;
   }
   .header {
     padding: 10px 0;
@@ -35,13 +60,16 @@
     padding: 40px 0;
   }
   .hero__wrapper {
+    grid-template-columns: repeat(8, 1fr);
     grid-gap: 30px;
   }
   .hero__content {
-    grid-area: 2/1/2/9;
-    width: 140%;
+    grid-area: 2/1/2/12;
+    width: 100%;
+    text-align: center;
   }
   .hero__content h1 {
+    margin: 0 auto;
     width: 10ch;
   }
   .hero__content p {
@@ -53,7 +81,7 @@
     grid-area: 1/1/1/12;
   }
   .hero__image img {
-    width: 100%;
+    display: block;
   }
   .hero__social {
     display: none;

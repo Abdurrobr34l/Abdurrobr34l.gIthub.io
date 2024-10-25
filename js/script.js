@@ -7,7 +7,7 @@ window.onscroll = function () {
     button.style.display = 'none'; // Hide button
   }
 };
-// GO-TO-TOP BUTTON END  ---------
+// GO-TO-TOP BUTTON END  --------- 
 
 // HAMBURGER MENU AND ICON START  ---------
 const hamburgerIcon = document.querySelector('.header__hamburgermenu-icon .fa-bars-staggered');
