@@ -39,6 +39,10 @@
   .btn {
     padding: 13px 15px;
   }
+
+  .container {
+    border: 5px solid yellow;
+  }
   // COMMON CSS END
 
   // HEADER START
@@ -237,6 +241,7 @@
   // HERO START
   .hero {
     height: 100%;
+    border: 2px solid red;
 
     &__wrapper {
       grid-gap: 40px;

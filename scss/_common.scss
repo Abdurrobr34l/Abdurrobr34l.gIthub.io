@@ -14,12 +14,13 @@ html {
   padding: 50px 0 30px;
 }
 
-// Section Common BG Color
+// Sections Common BG Color
 .header,
 .hero,
 .project {
   background-color: $primary-clr;
 }
+
 .about {
   background-color: $section-bg-clr;
 }

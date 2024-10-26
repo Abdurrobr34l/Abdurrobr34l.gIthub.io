@@ -29,7 +29,7 @@
     padding: 13px 15px;
   }
   .container {
-    border: 1px solid cyan;
+    border: 5px solid yellow;
   }
   .header {
     padding: 10px 0;
@@ -169,8 +169,8 @@
     display: block;
   }
   .hero {
-    border: 2px solid green;
     height: 100%;
+    border: 2px solid red;
   }
   .hero__wrapper {
     grid-gap: 40px;
