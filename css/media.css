@@ -28,9 +28,6 @@
   .btn {
     padding: 13px 15px;
   }
-  .container {
-    border: 5px solid yellow;
-  }
   .header {
     padding: 10px 0;
     height: 55px;
@@ -170,7 +167,6 @@
   }
   .hero {
     height: 100%;
-    border: 2px solid red;
   }
   .hero__wrapper {
     grid-gap: 40px;
