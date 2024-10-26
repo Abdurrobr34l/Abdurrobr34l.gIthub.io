@@ -110,3 +110,55 @@ window.onload = function () {
   document.body.appendChild(css);
 };
 // TYPEWRITER EFFECT FOR ABOUT ME SECTION END ---------
+
+// PROJECT FILTER START ---------
+// // Select all filter buttons and project items
+// const filterButtons = document.querySelectorAll('.filter-btn');
+// const projectItems = document.querySelectorAll('.filter-box');
+
+// // Add click event to all filter buttons
+// filterButtons.forEach(button => {
+//   button.addEventListener('click', () => {
+//     const filter = button.getAttribute('data-filter');
+
+//     // Loop through project items and apply the filter
+//     projectItems.forEach(item => {
+//       if (filter === 'all' || item.classList.contains(filter)) {
+//         item.classList.remove('hide');
+//       } else {
+//         item.classList.add('hide');
+//       }
+//     });
+//   });
+// });
+
+// Select all filter buttons and project items
+const filterButtons = document.querySelectorAll('.filter-btn');
+const projectItems = document.querySelectorAll('.filter-box~');
+
+// Function to filter projects
+filterButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const filter = button.getAttribute('data-filter');
+
+    projectItems.forEach(item => {
+      if (filter === 'all' || item.classList.contains(filter)) {
+        // Show item
+        item.classList.remove('hide');
+        setTimeout(() => {
+          item.classList.remove('hiding');
+        }, 10); // Minimal delay to allow CSS to catch
+      } else {
+        // Hide item with a smooth transition
+        item.classList.add('hiding');
+        item.addEventListener('transitionend', () => {
+          if (item.classList.contains('hiding')) {
+            item.classList.add('hide'); // Hide after transition finishes
+          }
+        }, { once: true });
+      }
+    });
+  });
+});
+
+// PROJECT FILTER END ---------

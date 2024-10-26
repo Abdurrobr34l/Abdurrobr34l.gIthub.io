@@ -182,7 +182,7 @@
 // About Me Start
 .about {
   height: 100vh;
-    place-content: center;
+  place-content: center;
 
   &__wrapper {
     align-items: center;
@@ -224,7 +224,6 @@
     flex: 2;
 
     &-text {
-
       .wrap h2 {
         font-size: clamp(24px, 4vw + 1rem, 35px);
       }
@@ -257,8 +256,13 @@
       position: relative;
       align-items: center;
       padding: 40px 0 30px;
-      mask-image: linear-gradient( to right,rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0));
+      mask-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 1) 20%,
+        rgba(0, 0, 0, 1) 80%,
+        rgba(0, 0, 0, 0)
+      );
 
       .icon {
         position: absolute;
@@ -289,9 +293,9 @@
 
       .icon1 {
         animation-delay: 0s;
-        
+
         i {
-          color: #DD4B24;
+          color: #dd4b24;
         }
       }
 
@@ -299,45 +303,45 @@
         animation-delay: 5s;
 
         i {
-          color: #254BDE;
+          color: #254bde;
         }
       }
 
       .icon3 {
         animation-delay: 10s;
-        
+
         i {
-          color: #D1689A;
+          color: #d1689a;
         }
       }
 
       .icon4 {
         animation-delay: 15s;
-        
+
         i {
-          color: #F4E225;
+          color: #f4e225;
         }
       }
 
       .icon5 {
         animation-delay: 20s;
-        
+
         i {
-          color: #7F18F9;
+          color: #7f18f9;
         }
       }
 
       .icon6 {
         animation-delay: 25s;
-        
+
         i {
-          color: #28799E;
+          color: #28799e;
         }
       }
 
       .icon7 {
         animation-delay: 30s;
-        
+
         i {
           color: $primary-clr;
         }
@@ -347,8 +351,75 @@
 }
 // About Me End
 
-// Project Start 
+// Project Start
 .project {
   height: 100vh;
+  height: 100%;
+  // place-content: center;
+
+  &__container {
+    padding: 20px;
+    border: 2px solid aliceblue;
+  }
+
+  &__filter {
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+
+    &-buttons {
+      gap: 10px;
+      padding: 40px;
+      border: 1px solid red;
+
+      button {
+        padding: 10px 20px;
+        color: $primary-clr;
+        background-color: $accent-clr;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          color: $accent-clr;
+          background-color: transparent;
+          border: 1px solid $accent-clr !important;
+        }
+      }
+    }
+
+    &-boxs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      width: 100%;
+      border: 1px solid greenyellow;
+
+      .filter-box {
+        display: flex;
+        display: block; /* Important to keep layout intact */
+        justify-content: space-between;
+        align-items: center;
+        width: 300px;
+        height: 300px;
+
+        transition: opacity 0.5s ease, transform 0.5s ease;
+        opacity: 1;
+        transform: scale(1);
+        border: 1px solid #fff;
+      }
+      .filter-box.hide {
+        // display: none;
+        opacity: 0;
+        transform: scale(0.9);
+        // pointer-events: none;
+        // transition: opacity 0.5s ease, transform 0.5s ease;
+      }
+      .filter-box.hide {
+        display: none;
+        }
+    }
+  }
 }
-// Project End 
+// Project End
