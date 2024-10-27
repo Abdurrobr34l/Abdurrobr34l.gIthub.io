@@ -133,8 +133,8 @@ window.onload = function () {
 // });
 
 // Select all filter buttons and project items
-const filterButtons = document.querySelectorAll('.filter-btn');
-const projectItems = document.querySelectorAll('.filter-box~');
+const filterButtons = document.querySelectorAll('.project__filter-btn');
+const projectItems = document.querySelectorAll('.project__filter-box');
 
 // Function to filter projects
 filterButtons.forEach(button => {
@@ -142,23 +142,24 @@ filterButtons.forEach(button => {
     const filter = button.getAttribute('data-filter');
 
     projectItems.forEach(item => {
-      if (filter === 'all' || item.classList.contains(filter)) {
-        // Show item
-        item.classList.remove('hide');
-        setTimeout(() => {
-          item.classList.remove('hiding');
-        }, 10); // Minimal delay to allow CSS to catch
+      if (filter === 'all' || item.classList.contains(`project__filter-box--${filter}`)) {
+        // Show item with no delay
+        item.classList.remove('hide', 'hiding');
       } else {
-        // Hide item with a smooth transition
+        // Hide item smoothly
         item.classList.add('hiding');
         item.addEventListener('transitionend', () => {
           if (item.classList.contains('hiding')) {
-            item.classList.add('hide'); // Hide after transition finishes
+            item.classList.add('hide');
           }
         }, { once: true });
       }
     });
   });
 });
+
+
+
+
 
 // PROJECT FILTER END ---------

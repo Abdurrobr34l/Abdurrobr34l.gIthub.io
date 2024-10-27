@@ -365,7 +365,7 @@
   &__filter {
     flex-direction: column;
     align-items: center;
-    gap: 80px;
+    gap: 40px;
 
     &-buttons {
       gap: 10px;
@@ -388,37 +388,37 @@
       }
     }
 
-    &-boxs {
+    &-boxes {
       display: flex;
       flex-wrap: wrap;
-      gap: 20px;
       justify-content: center;
+      gap: 20px;
       width: 100%;
       border: 1px solid greenyellow;
 
-      .filter-box {
-        display: flex;
-        display: block; /* Important to keep layout intact */
-        justify-content: space-between;
-        align-items: center;
-        width: 300px;
-        height: 300px;
-
-        transition: opacity 0.5s ease, transform 0.5s ease;
-        opacity: 1;
-        transform: scale(1);
-        border: 1px solid #fff;
-      }
-      .filter-box.hide {
-        // display: none;
-        opacity: 0;
-        transform: scale(0.9);
-        // pointer-events: none;
-        // transition: opacity 0.5s ease, transform 0.5s ease;
-      }
-      .filter-box.hide {
-        display: none;
-        }
+    }
+    &-box {
+      display: block;
+      width: 300px;
+      height: 300px;
+      transition: opacity 0.23s ease-in-out, transform 0.23s ease-in-out;
+      opacity: 1;
+      transform: scale(1);
+      border: 1px solid #fff;
+      background-color: #f0f0f0; /* For visual distinction */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .project__filter-box.hiding {
+      opacity: 0;
+      transform: scale(0.9);
+      pointer-events: none;
+    }
+    
+    .project__filter-box.hide {
+      display: none;
     }
   }
 }
