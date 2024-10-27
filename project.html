@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdur Rob | Projects</title>
+  <!-- File Links -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="img/favicon/fav.png">
+  <!-- Font-Awsome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+.project__filter-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  border: 1px solid greenyellow;
+}
+
+.project__filter-box {
+  display: block;
+  width: 300px;
+  height: 300px;
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  border: 1px solid #fff;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project__filter-box.hiding {
+  opacity: 0;
+  transform: scale(0.9); /* Smooth shrinking effect */
+  pointer-events: none; /* Prevent interaction */
+}
+
+.project__filter-box.hide {
+  display: none; /* Final hide state after the transition */
+}
+
+.project__filter-btn {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.project__filter-btn:hover {
+  background-color: #2980b9;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Header Start -->
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__wrapper flex-wrapper">
+          <!-- Logo -->
+          <div class="header__logo">
+            <a href="index.html"><img src="img/logo/11.png" alt="it is abdurrobr34l website logo"></a>
+            <!-- <a href="index.html"><img src="img/logo/22.png" alt="it is abdurrobr34l website logo"></a> -->
+          </div>
+          <!-- Menus -->
+          <nav class="header__nav">
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <!-- Header Button -->
+          <div class="header__btn">
+            <a href="#contact" class="btn">Hire Me</a>
+          </div>
+          <!-- Hamburger Menu Icon -->
+          <div class="header__hamburgermenu-icon">
+            <!-- <i class="fa-solid fa-bars"></i> -->
+            <i class="fa-solid fa-bars-staggered"></i>
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+  
+    <!-- Hamburger Menu Start -->
+    <div class="hamburgermenu">
+      <div class="hamburgermenu__container container flex">
+        <!-- Menus -->
+        <nav class="hamburgermenu__nav flex">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- Header Button -->
+        <div class="hamburgermenu__btn header__btn">
+          <a href="#contact" class="btn">Hire Me</a>
+        </div>
+      </div>
+    </div>
+    <!-- Hamburger Menu End -->
+    <!-- Header End -->
+
+    <div class="project section-padding" id="projects">
+      <div class="project__container container">
+        <!-- Filter Buttons -->
+        <div class="project__filter flex">
+          <div class="project__filter-buttons flex">
+            <button class="project__filter-btn" data-filter="all">All</button>
+            <button class="project__filter-btn" data-filter="web">Web Development</button>
+            <button class="project__filter-btn" data-filter="wordpress">Wordpress</button>
+            <button class="project__filter-btn" data-filter="email">Email Template</button>
+          </div>
+        </div>
+        <!-- Filter Boxes -->
+        <div class="project__filter-boxes">
+          <div class="project__filter-box web">Web Development</div>
+          <div class="project__filter-box email">Email Template</div>
+          <div class="project__filter-box wordpress">Wordpress</div>
+          <div class="project__filter-box web">Web Development</div>
+          <div class="project__filter-box web">Web Development</div>
+          <div class="project__filter-box web">Web Development</div>
+        </div>
+        <!-- Project Button -->
+        <a href="project.html" class="project__btn btn">See More</a>
+      </div>
+    </div>
+    
+
+    <script>
+     // Select all filter buttons and project items
+const filterButtons = document.querySelectorAll('.project__filter-btn');
+const projectItems = document.querySelectorAll('.project__filter-box');
+
+// Function to filter projects
+filterButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const filter = button.getAttribute('data-filter');
+
+    projectItems.forEach(item => {
+      if (filter === 'all' || item.classList.contains(filter)) {
+        // Show item with a smooth transition
+        item.classList.remove('hide');  // Remove hide first
+        setTimeout(() => {
+          item.classList.remove('hiding'); // Trigger opacity and transform back
+        }, 10); // Small delay to ensure CSS applies
+      } else {
+        // Smoothly hide the item
+        item.classList.add('hiding'); // Apply opacity/scale transition
+        item.addEventListener('transitionend', () => {
+          if (item.classList.contains('hiding')) {
+            item.classList.add('hide'); // Finally hide after transition ends
+          }
+        }, { once: true }); // Ensure it only runs once per transition
+      }
+    });
+  });
+});
+
+    </script>
+</body>
+</html>
