@@ -2,20 +2,40 @@
 <html lang="en">
 
 <head>
+  <!-- Meta Tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abdur Rob | Projects</title>
+  <meta name="description"
+    content="Welcome to Abdur Rob's portfolio. Explore my web development projects, skills, and learn more about my journey as a frontend developer.">
+  <meta name="keywords"
+    content="Abdur Rob, frontend developer, web development, portfolio, JavaScript, CSS, HTML, projects">
+  <meta name="robots" content="index, follow">
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Abdur Rob | Frontend Developer & Portfolio">
+  <meta property="og:description" content="Explore my web development projects and skills as a frontend developer.">
+  <meta property="og:image" content="url_to_image.jpg">
+  <meta property="og:url" content="https://yourwebsite.com">
+  <meta property="og:type" content="website">
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Abdur Rob | Frontend Developer & Portfolio">
+  <meta name="twitter:description" content="Explore my web development projects and skills as a frontend developer.">
+  <meta name="twitter:image" content="url_to_image.jpg">
+
   <!-- File Links -->
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/media.css">
+
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="img/favicon/fav.png">
+
   <!-- Font-Awsome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <style>
+  <!-- <style>
 .project__filter-boxes {
   display: flex;
   flex-wrap: wrap;
@@ -39,15 +59,15 @@
   align-items: center;
 }
 
-.project__filter-box.hiding {
+/* .project__filter-box.hiding {
   opacity: 0;
   transform: scale(0.9); /* Smooth shrinking effect */
-  pointer-events: none; /* Prevent interaction */
-}
+  /* pointer-events: none; Prevent interaction */
+/* } */
 
 .project__filter-box.hide {
   display: none; /* Final hide state after the transition */
-}
+} */
 
 .project__filter-btn {
   padding: 10px 20px;
@@ -63,118 +83,128 @@
   background-color: #2980b9;
 }
 
-    </style>
+    </style> -->
 </head>
+
 <body>
-    <!-- Header Start -->
-    <header class="header">
-      <div class="header__container container">
-        <div class="header__wrapper flex-wrapper">
-          <!-- Logo -->
-          <div class="header__logo">
-            <a href="index.html"><img src="img/logo/11.png" alt="it is abdurrobr34l website logo"></a>
-            <!-- <a href="index.html"><img src="img/logo/22.png" alt="it is abdurrobr34l website logo"></a> -->
-          </div>
-          <!-- Menus -->
-          <nav class="header__nav">
-            <ul>
-              <li><a href="#about">About</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-          <!-- Header Button -->
-          <div class="header__btn">
-            <a href="#contact" class="btn">Hire Me</a>
-          </div>
-          <!-- Hamburger Menu Icon -->
-          <div class="header__hamburgermenu-icon">
-            <!-- <i class="fa-solid fa-bars"></i> -->
-            <i class="fa-solid fa-bars-staggered"></i>
-            <i class="fa-solid fa-xmark"></i>
-          </div>
+  <!-- Header Start -->
+  <header class="header">
+    <div class="header__container container">
+      <div class="header__wrapper flex-wrapper">
+        <!-- Logo -->
+        <div class="header__logo">
+          <a href="index.html"><img src="img/logo/11.png" alt="it is abdurrobr34l website logo"></a>
+          <!-- <a href="index.html"><img src="img/logo/22.png" alt="it is abdurrobr34l website logo"></a> -->
         </div>
-      </div>
-    </header>
-  
-    <!-- Hamburger Menu Start -->
-    <div class="hamburgermenu">
-      <div class="hamburgermenu__container container flex">
         <!-- Menus -->
-        <nav class="hamburgermenu__nav flex">
+        <nav class="header__nav">
           <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
           </ul>
         </nav>
         <!-- Header Button -->
-        <div class="hamburgermenu__btn header__btn">
+        <div class="header__btn">
           <a href="#contact" class="btn">Hire Me</a>
         </div>
+        <!-- Hamburger Menu Icon -->
+        <div class="header__hamburgermenu-icon">
+          <!-- <i class="fa-solid fa-bars"></i> -->
+          <i class="fa-solid fa-bars-staggered"></i>
+          <i class="fa-solid fa-xmark"></i>
+        </div>
       </div>
     </div>
-    <!-- Hamburger Menu End -->
-    <!-- Header End -->
+  </header>
 
-    <div class="project section-padding" id="projects">
-      <div class="project__container container">
-        <!-- Filter Buttons -->
-        <div class="project__filter flex">
-          <div class="project__filter-buttons flex">
-            <button class="project__filter-btn" data-filter="all">All</button>
-            <button class="project__filter-btn" data-filter="web">Web Development</button>
-            <button class="project__filter-btn" data-filter="wordpress">Wordpress</button>
-            <button class="project__filter-btn" data-filter="email">Email Template</button>
+  <!-- Hamburger Menu Start -->
+  <div class="hamburgermenu">
+    <div class="hamburgermenu__container container flex">
+      <!-- Menus -->
+      <nav class="hamburgermenu__nav flex">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Header Button -->
+      <div class="hamburgermenu__btn header__btn">
+        <a href="#contact" class="btn">Hire Me</a>
+      </div>
+    </div>
+  </div>
+  <!-- Hamburger Menu End -->
+  <!-- Header End -->
+
+  <div class="project section-padding" id="projects">
+    <div class="project__container container">
+      <!-- Filter Buttons -->
+      <div class="project__filter flex">
+        <div class="project__filter-buttons flex">
+          <ul class="flex">
+            <li class="list project__filter-btn" data-filter="all">ALL</li>
+            <li class="list project__filter-btn" data-filter="web">Web Development</li>
+            <li class="list project__filter-btn" data-filter="wordpress">Wordpress</li>
+            <li class="list project__filter-btn" data-filter="email">Email Template</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Filter Boxes -->
+      <div class="project__filter-boxes">
+        <!-- 1 -->
+        <div class="project__filter-box web itemBox">
+          <div class="overlay">
+            <a href="#" target="_blank"><i class="fa-solid fa-arrow-right-long"></i></a>
           </div>
         </div>
-        <!-- Filter Boxes -->
-        <div class="project__filter-boxes">
-          <div class="project__filter-box web">Web Development</div>
-          <div class="project__filter-box email">Email Template</div>
-          <div class="project__filter-box wordpress">Wordpress</div>
-          <div class="project__filter-box web">Web Development</div>
-          <div class="project__filter-box web">Web Development</div>
-          <div class="project__filter-box web">Web Development</div>
+        <!-- 2 -->
+        <div class="project__filter-box wordpress itemBox">
+          <div class="overlay">
+            <a href="#" target="_blank"><i class="fa-solid fa-arrow-right-long"></i></a>
+          </div>
         </div>
-        <!-- Project Button -->
-        <a href="project.html" class="project__btn btn">See More</a>
+        <!-- 3 -->
+        <div class="project__filter-box web itemBox"><img src="img/hero/abdur rob.png" alt=""></div>
+        <div class="project__filter-box wordpress itemBox"><img src="img/hero/abdurrob.png" alt=""></div>
+        <div class="project__filter-box email itemBox"><img src="img/hero/abdurrob.png" alt=""></div>
+        <div class="project__filter-box web itemBox"><img src="img/hero/abdur rob.png" alt=""></div>
       </div>
+      <!-- Project Button -->
+      <a href="project.html" class="project__btn btn">See More</a>
     </div>
-    
+  </div>
+  
+  
+  <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script>
-     // Select all filter buttons and project items
-const filterButtons = document.querySelectorAll('.project__filter-btn');
-const projectItems = document.querySelectorAll('.project__filter-box');
+  <!-- <script>
+    $(document).ready(function () {
+      $('.list').click(function () {
+        const value = $(this).attr('data-filter');
 
-// Function to filter projects
-filterButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const filter = button.getAttribute('data-filter');
+        if (value == 'all') {
+          // Show all items when 'all' is selected
+          $('.itemBox').show('1000');
+        } else {
+          // Hide items that do not match the filter and show those that match
+          $('.itemBox').not('.' + value).hide('1000');
+          $('.itemBox').filter('.' + value).show('1000');
+        }
+      });
 
-    projectItems.forEach(item => {
-      if (filter === 'all' || item.classList.contains(filter)) {
-        // Show item with a smooth transition
-        item.classList.remove('hide');  // Remove hide first
-        setTimeout(() => {
-          item.classList.remove('hiding'); // Trigger opacity and transform back
-        }, 10); // Small delay to ensure CSS applies
-      } else {
-        // Smoothly hide the item
-        item.classList.add('hiding'); // Apply opacity/scale transition
-        item.addEventListener('transitionend', () => {
-          if (item.classList.contains('hiding')) {
-            item.classList.add('hide'); // Finally hide after transition ends
-          }
-        }, { once: true }); // Ensure it only runs once per transition
-      }
+      // Add active class to selected filter button
+      $('.list').click(function () {
+        $(this).addClass('active').siblings().removeClass('active');
+      });
     });
-  });
-});
-
-    </script>
+  </script> -->
 </body>
+
 </html>

@@ -112,54 +112,20 @@ window.onload = function () {
 // TYPEWRITER EFFECT FOR ABOUT ME SECTION END ---------
 
 // PROJECT FILTER START ---------
-// // Select all filter buttons and project items
-// const filterButtons = document.querySelectorAll('.filter-btn');
-// const projectItems = document.querySelectorAll('.filter-box');
-
-// // Add click event to all filter buttons
-// filterButtons.forEach(button => {
-//   button.addEventListener('click', () => {
-//     const filter = button.getAttribute('data-filter');
-
-//     // Loop through project items and apply the filter
-//     projectItems.forEach(item => {
-//       if (filter === 'all' || item.classList.contains(filter)) {
-//         item.classList.remove('hide');
-//       } else {
-//         item.classList.add('hide');
-//       }
-//     });
-//   });
-// });
-
-// Select all filter buttons and project items
-const filterButtons = document.querySelectorAll('.project__filter-btn');
-const projectItems = document.querySelectorAll('.project__filter-box');
-
-// Function to filter projects
-filterButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const filter = button.getAttribute('data-filter');
-
-    projectItems.forEach(item => {
-      if (filter === 'all' || item.classList.contains(`project__filter-box--${filter}`)) {
-        // Show item with no delay
-        item.classList.remove('hide', 'hiding');
-      } else {
-        // Hide item smoothly
-        item.classList.add('hiding');
-        item.addEventListener('transitionend', () => {
-          if (item.classList.contains('hiding')) {
-            item.classList.add('hide');
-          }
-        }, { once: true });
-      }
-    });
-  });
-});
-
-
-
-
-
+$(document).ready(function(){
+  $('.list').click(function(){
+  const value = $(this).attr('data-filter');
+  if (value == 'all'){
+  $('.itemBox').show('1000');
+  }
+  else{
+  }
+  $('.itemBox').not('.'+value).hide('1000');
+  $('.itemBox').filter('.'+value).show('1000');
+  })
+  })
+  // add active class on selected item
+  $('.list').click(function(){
+  })
+  $(this).addClass('active').siblings().removeClass('active');
 // PROJECT FILTER END ---------

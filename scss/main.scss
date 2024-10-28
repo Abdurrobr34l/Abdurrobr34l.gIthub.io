@@ -359,6 +359,7 @@
 
   &__container {
     padding: 20px;
+    text-align: center;
     border: 2px solid aliceblue;
   }
 
@@ -369,56 +370,101 @@
 
     &-buttons {
       gap: 10px;
-      padding: 40px;
       border: 1px solid red;
+    }
 
-      button {
-        padding: 10px 20px;
-        color: $primary-clr;
-        background-color: $accent-clr;
-        border: 1px solid transparent;
-        border-radius: 8px;
-        transition: 0.3s ease-in-out;
+    ul {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
 
-        &:hover {
-          color: $accent-clr;
-          background-color: transparent;
-          border: 1px solid $accent-clr !important;
-        }
+    &-btn {
+      padding: 10px 20px;
+      color: $primary-clr;
+      background-color: $accent-clr;
+      border: 1px solid transparent;
+      border-radius: 8px;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        color: $accent-clr;
+        background-color: transparent;
+        border: 1px solid $accent-clr !important;
+        cursor: pointer;
       }
+    }
+    // The below code is to highlight the active button 
+    .active {
+      color: $accent-clr;
+      background-color: transparent;
+      border: 1px solid $accent-clr !important;
     }
 
     &-boxes {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
+      flex-wrap: wrap;
       gap: 20px;
-      width: 100%;
-      border: 1px solid greenyellow;
-
+      margin: 80px 0 40px;
     }
+    
     &-box {
       display: block;
-      width: 300px;
-      height: 300px;
+      width: 400px;
+      height: 400px;
+      border: 1px solid $section-bg-clr;
+      border-radius: 8px;
       transition: opacity 0.23s ease-in-out, transform 0.23s ease-in-out;
-      opacity: 1;
       transform: scale(1);
-      border: 1px solid #fff;
-      background-color: #f0f0f0; /* For visual distinction */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    .project__filter-box.hiding {
-      opacity: 0;
-      transform: scale(0.9);
-      pointer-events: none;
-    }
-    
-    .project__filter-box.hide {
-      display: none;
+      opacity: 1;
+
+      &:hover .overlay {
+        opacity: 1;
+        transition: opacity 0.23s ease-in-out, transform 0.23s ease-in-out;
+      }
+
+      .overlay {
+        place-content: center;
+        width: 100%;
+        height: 100%;
+        background-color: #00000082;
+        opacity: 0;
+
+        i {
+          margin-top: 20px;
+          padding: 20px;
+          font-size: 30px;
+          border: 5px solid $accent-clr;
+          border-radius: 100%;
+          color: $primary-clr;
+          background-color: $accent-clr;
+          transform: rotate(-35deg);
+
+          &:hover {
+            background-color: $primary-clr;
+            color: $accent-clr;
+          }
+        }
+      }
+
+      @mixin bg-css {
+        // background-color: red;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      // Here u can add bg image of your projects
+      &:nth-child(1) {
+        background-image: url("../img/hero/abdur rob.png");
+        @include bg-css;
+      }
+
+      &:nth-child(2) {
+        background-image: url("../img/hero/abdurrob.png");
+        @include bg-css;
+      }
     }
   }
 }

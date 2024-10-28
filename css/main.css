@@ -478,6 +478,7 @@ nav ul {
 }
 .project__container {
   padding: 20px;
+  text-align: center;
   border: 2px solid aliceblue;
 }
 .project__filter {
@@ -492,10 +493,17 @@ nav ul {
 }
 .project__filter-buttons {
   gap: 10px;
-  padding: 40px;
   border: 1px solid red;
 }
-.project__filter-buttons button {
+.project__filter ul {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+}
+.project__filter-btn {
   padding: 10px 20px;
   color: #1C2833;
   background-color: #1abc9c;
@@ -504,7 +512,13 @@ nav ul {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
-.project__filter-buttons button:hover {
+.project__filter-btn:hover {
+  color: #1abc9c;
+  background-color: transparent;
+  border: 1px solid #1abc9c !important;
+  cursor: pointer;
+}
+.project__filter .active {
   color: #1abc9c;
   background-color: transparent;
   border: 1px solid #1abc9c !important;
@@ -513,44 +527,66 @@ nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 20px;
-  width: 100%;
-  border: 1px solid greenyellow;
+  margin: 80px 0 40px;
 }
 .project__filter-box {
   display: block;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
+  border: 1px solid #ECF0F1;
+  border-radius: 8px;
   -webkit-transition: opacity 0.23s ease-in-out, -webkit-transform 0.23s ease-in-out;
   transition: opacity 0.23s ease-in-out, -webkit-transform 0.23s ease-in-out;
   transition: opacity 0.23s ease-in-out, transform 0.23s ease-in-out;
   transition: opacity 0.23s ease-in-out, transform 0.23s ease-in-out, -webkit-transform 0.23s ease-in-out;
-  opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
-  border: 1px solid #fff;
-  background-color: #f0f0f0; /* For visual distinction */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  opacity: 1;
 }
-.project__filter .project__filter-box.hiding {
+.project__filter-box:hover .overlay {
+  opacity: 1;
+  -webkit-transition: opacity 0.23s ease-in-out, -webkit-transform 0.23s ease-in-out;
+  transition: opacity 0.23s ease-in-out, -webkit-transform 0.23s ease-in-out;
+  transition: opacity 0.23s ease-in-out, transform 0.23s ease-in-out;
+  transition: opacity 0.23s ease-in-out, transform 0.23s ease-in-out, -webkit-transform 0.23s ease-in-out;
+}
+.project__filter-box .overlay {
+  place-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5098039216);
   opacity: 0;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-  pointer-events: none;
 }
-.project__filter .project__filter-box.hide {
-  display: none;
+.project__filter-box .overlay i {
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 30px;
+  border: 5px solid #1abc9c;
+  border-radius: 100%;
+  color: #1C2833;
+  background-color: #1abc9c;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+.project__filter-box .overlay i:hover {
+  background-color: #1C2833;
+  color: #1abc9c;
+}
+.project__filter-box:nth-child(1) {
+  background-image: url("../img/hero/abdur rob.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.project__filter-box:nth-child(2) {
+  background-image: url("../img/hero/abdurrob.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
