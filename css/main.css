@@ -93,7 +93,6 @@ i:hover {
   background-color: #1abc9c;
   color: #1C2833;
   border-radius: 50%;
-  opacity: 0.8;
   display: none;
   text-align: center;
   font-size: 24px;
@@ -102,7 +101,6 @@ i:hover {
   color: #1abc9c;
   outline: 2px solid #1abc9c;
   background-color: #1C2833;
-  opacity: 1;
 }
 
 .container {
@@ -493,7 +491,7 @@ nav ul {
 }
 .project__filter-buttons {
   gap: 10px;
-  border: 1px solid red;
+  padding-top: 30px;
 }
 .project__filter ul {
   -webkit-box-pack: center;
@@ -549,6 +547,14 @@ nav ul {
           transform: scale(1);
   opacity: 1;
 }
+.project__filter-box:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-transition: opacity 0.23s ease-in-out, -webkit-transform 0.23s ease-in-out;
+  transition: opacity 0.23s ease-in-out, -webkit-transform 0.23s ease-in-out;
+  transition: opacity 0.23s ease-in-out, transform 0.23s ease-in-out;
+  transition: opacity 0.23s ease-in-out, transform 0.23s ease-in-out, -webkit-transform 0.23s ease-in-out;
+}
 .project__filter-box:hover .overlay {
   opacity: 1;
   -webkit-transition: opacity 0.23s ease-in-out, -webkit-transform 0.23s ease-in-out;
@@ -560,11 +566,12 @@ nav ul {
   place-content: center;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5098039216);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(26, 188, 156, 0.3019607843)), to(rgba(26, 188, 156, 0.3019607843)));
+  background: linear-gradient(180deg, rgba(26, 188, 156, 0.3019607843) 0%, rgba(26, 188, 156, 0.3019607843) 100%);
+  border-radius: 8px;
   opacity: 0;
 }
 .project__filter-box .overlay i {
-  margin-top: 20px;
   padding: 20px;
   font-size: 30px;
   border: 5px solid #1abc9c;
@@ -586,6 +593,24 @@ nav ul {
 }
 .project__filter-box:nth-child(2) {
   background-image: url("../img/hero/abdurrob.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.project__filter-box:nth-child(3) {
+  background-image: url("../img/hero/abdur rob.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.project__filter-box:nth-child(4) {
+  background-image: url("../img/hero/abdurrob.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.project__filter-box:nth-child(5) {
+  background-image: url("../img/hero/abdur rob.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

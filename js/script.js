@@ -112,20 +112,21 @@ window.onload = function () {
 // TYPEWRITER EFFECT FOR ABOUT ME SECTION END ---------
 
 // PROJECT FILTER START ---------
-$(document).ready(function(){
-  $('.list').click(function(){
-  const value = $(this).attr('data-filter');
-  if (value == 'all'){
-  $('.itemBox').show('1000');
-  }
-  else{
-  }
-  $('.itemBox').not('.'+value).hide('1000');
-  $('.itemBox').filter('.'+value).show('1000');
-  })
-  })
-  // add active class on selected item
-  $('.list').click(function(){
-  })
-  $(this).addClass('active').siblings().removeClass('active');
+$(document).ready(function() {
+  $('.list').click(function() {
+    const value = $(this).attr('data-filter');
+    
+    if (value === 'all') {
+      // Show all items when 'all' is selected
+      $('.itemBox').show(1000);
+    } else {
+      // Hide items that do not match the filter and show those that match
+      $('.itemBox').not('.' + value).hide(1000);
+      $('.itemBox').filter('.' + value).show(1000);
+    }
+    
+    // Add active class to selected filter button
+    $(this).addClass('active').siblings().removeClass('active');
+  });
+});
 // PROJECT FILTER END ---------

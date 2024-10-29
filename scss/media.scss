@@ -146,6 +146,27 @@
     }
   }
   // ABOUT END
+
+  // PROJECT START
+  .project {
+    &__filter {
+      &-boxes {
+        margin: 60px 0 40px;
+      }
+
+      &-box {
+        width: 300px;
+        height: 250px;
+
+        .overlay {
+          i {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+  // PROJECT END
 }
 
 /* SMALL DEVICES (LANSCAPE PHONE, 576px and up) */
@@ -280,6 +301,17 @@
     }
   }
   // ABOUT END
+
+  // PROJECT START
+  .project {
+    &__filter {
+      &-box {
+        width: 300px;
+        height: 300px;
+      }
+    }
+  }
+  // PROJECT END
 }
 
 /* LARGE DEVICES (DESKTOPS, 992px and up) */
@@ -307,6 +339,16 @@
 
 /* EXTRA LARGE DEVICES (LARGE DESKTOPS, 1200px and up) */
 @media (min-width: 1200px) and (max-width: 1399.98px) {
+  // PROJECT START
+  .project {
+    &__filter {
+      &-box {
+        width: 300px;
+        height: 300px;
+      }
+    }
+  }
+  // PROJECT END
 }
 
 /* EXTRA EXTRA LARGE DEVICES (LARGE DESKTOPS, 1400px and up) */

@@ -215,32 +215,65 @@
   <!-- PROJECT START -->
   <div class="project section-padding" id="projects">
     <div class="project__container container">
-      <!-- Project Filtern -->
+      <!-- Filter Buttons -->
       <div class="project__filter flex">
         <!-- Filter Buttons -->
         <div class="project__filter-buttons flex">
-          <button class="project__filter-btn" data-filter="all">All</button>
-          <button class="project__filter-btn" data-filter="web">Web Development</button>
-          <button class="project__filter-btn" data-filter="wordpress">Wordpress</button>
-          <button class="project__filter-btn" data-filter="email">Email Template</button>
+          <ul class="flex">
+            <li class="list project__filter-btn active" data-filter="all">ALL</li>
+            <li class="list project__filter-btn" data-filter="web">Web Development</li>
+            <li class="list project__filter-btn" data-filter="wordpress">Wordpress</li>
+            <li class="list project__filter-btn" data-filter="email">Email Template</li>
+          </ul>
         </div>
-        <!-- Filter Boxs -->
-        <div class="project__filter-boxes">
-          <div class="project__filter-box project__filter-box--web">web</div>
-          <div class="project__filter-box project__filter-box--email">email</div>
-          <div class="project__filter-box project__filter-box--wordpress">wordpress</div>
-          <div class="project__filter-box project__filter-box--web">web</div>
-          <div class="project__filter-box project__filter-box--web">web</div>
-          <div class="project__filter-box project__filter-box--web">web</div>
-
-        </div>
-        <!-- Project Buttons -->
-        <a href="project.html" class="project__btn btn" target="_blank">See More</a>
       </div>
+      <!-- Filter Boxes -->
+      <div class="project__filter-boxes">
+        <!-- 1 -->
+        <div class="project__filter-box web itemBox">
+          <div class="overlay">
+            <a href="#" target="_blank"><i class="fa-solid fa-arrow-right-long"></i></a>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="project__filter-box wordpress itemBox">
+          <div class="overlay">
+            <a href="#" target="_blank"><i class="fa-solid fa-arrow-right-long"></i></a>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="project__filter-box email itemBox">
+          <div class="overlay">
+            <a href="#" target="_blank"><i class="fa-solid fa-arrow-right-long"></i></a>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="project__filter-box wordpress itemBox">
+          <div class="overlay">
+            <a href="#" target="_blank"><i class="fa-solid fa-arrow-right-long"></i></a>
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="project__filter-box email itemBox">
+          <div class="overlay">
+            <a href="#" target="_blank"><i class="fa-solid fa-arrow-right-long"></i></a>
+          </div>
+        </div>
+        <!-- 6 -->
+        <div class="project__filter-box web itemBox">
+          <div class="overlay">
+            <a href="#" target="_blank"><i class="fa-solid fa-arrow-right-long"></i></a>
+          </div>
+        </div>
+        
+      </div>
+      <!-- Project Button -->
+      <a href="project.html" class="project__btn btn">See More</a>
     </div>
   </div>
   <!-- PROJECT END -->
 
+  <script src="js/jquery-3.7.1.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 

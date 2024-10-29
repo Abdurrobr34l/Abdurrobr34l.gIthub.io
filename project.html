@@ -140,13 +140,15 @@
   <!-- Hamburger Menu End -->
   <!-- Header End -->
 
+  <!-- Project Start -->
   <div class="project section-padding" id="projects">
     <div class="project__container container">
       <!-- Filter Buttons -->
       <div class="project__filter flex">
+        <!-- Filter Buttons -->
         <div class="project__filter-buttons flex">
           <ul class="flex">
-            <li class="list project__filter-btn" data-filter="all">ALL</li>
+            <li class="list project__filter-btn active" data-filter="all">ALL</li>
             <li class="list project__filter-btn" data-filter="web">Web Development</li>
             <li class="list project__filter-btn" data-filter="wordpress">Wordpress</li>
             <li class="list project__filter-btn" data-filter="email">Email Template</li>
@@ -168,43 +170,64 @@
           </div>
         </div>
         <!-- 3 -->
-        <div class="project__filter-box web itemBox"><img src="img/hero/abdur rob.png" alt=""></div>
-        <div class="project__filter-box wordpress itemBox"><img src="img/hero/abdurrob.png" alt=""></div>
-        <div class="project__filter-box email itemBox"><img src="img/hero/abdurrob.png" alt=""></div>
-        <div class="project__filter-box web itemBox"><img src="img/hero/abdur rob.png" alt=""></div>
+        <div class="project__filter-box email itemBox">
+          <div class="overlay">
+            <a href="#" target="_blank"><i class="fa-solid fa-arrow-right-long"></i></a>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="project__filter-box wordpress itemBox">
+          <div class="overlay">
+            <a href="#" target="_blank"><i class="fa-solid fa-arrow-right-long"></i></a>
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="project__filter-box email itemBox">
+          <div class="overlay">
+            <a href="#" target="_blank"><i class="fa-solid fa-arrow-right-long"></i></a>
+          </div>
+        </div>
+        <!-- 6 -->
+        <div class="project__filter-box web itemBox">
+          <div class="overlay">
+            <a href="#" target="_blank"><i class="fa-solid fa-arrow-right-long"></i></a>
+          </div>
+        </div>
+        
       </div>
       <!-- Project Button -->
       <a href="project.html" class="project__btn btn">See More</a>
     </div>
   </div>
+  <!-- Project End -->
   
-  
+  <script src="js/jquery-3.7.1.min.js"></script>
   <script src="js/script.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  
 
-  <!-- <script>
-    $(document).ready(function () {
-      $('.list').click(function () {
-        const value = $(this).attr('data-filter');
 
-        if (value == 'all') {
-          // Show all items when 'all' is selected
-          $('.itemBox').show('1000');
-        } else {
-          // Hide items that do not match the filter and show those that match
-          $('.itemBox').not('.' + value).hide('1000');
-          $('.itemBox').filter('.' + value).show('1000');
-        }
-      });
+  <script>
+    // $(document).ready(function () {
+    //   $('.list').click(function () {
+    //     const value = $(this).attr('data-filter');
 
-      // Add active class to selected filter button
-      $('.list').click(function () {
-        $(this).addClass('active').siblings().removeClass('active');
-      });
-    });
-  </script> -->
+    //     if (value == 'all') {
+    //       // Show all items when 'all' is selected
+    //       $('.itemBox').show('1000');
+    //     } else {
+    //       // Hide items that do not match the filter and show those that match
+    //       $('.itemBox').not('.' + value).hide('1000');
+    //       $('.itemBox').filter('.' + value).show('1000');
+    //     }
+    //   });
+
+    //   // Add active class to selected filter button
+    //   $('.list').click(function () {
+    //     $(this).addClass('active').siblings().removeClass('active');
+    //   });
+    // });
+  </script>
 </body>
 
 </html>
