@@ -458,29 +458,59 @@
 
       // Here u can add bg image of your projects
       &:nth-child(1) {
-        background-image: url("../img/hero/abdur rob.png");
+        background-image: url("../img/project/agency.webp");
         @include bg-css;
       }
 
       &:nth-child(2) {
-        background-image: url("../img/hero/abdurrob.png");
+        background-image: url("../img/project/news.webp");
         @include bg-css;
       }
 
       &:nth-child(3) {
-        background-image: url("../img/hero/abdur rob.png");
+        background-image: url("../img/project/edutech.webp");
         @include bg-css;
       }
 
       &:nth-child(4) {
-        background-image: url("../img/hero/abdurrob.png");
+        background-image: url("../img/project/bookmark.webp");
         @include bg-css;
       }
 
       &:nth-child(5) {
-        background-image: url("../img/hero/abdur rob.png");
+        background-image: url("../img/project/entripoti.webp");
         @include bg-css;
       }
+
+      &:nth-child(6) {
+        background-image: url("../img/project/email2.webp");
+        @include bg-css;
+      }
+      &:nth-child(7) {
+        background-image: url("../img/project/nipro.webp");
+        @include bg-css;
+      }
+      &:nth-child(8) {
+        background-image: url("../img/project/taxi.webp");
+        @include bg-css;
+      }
+      &:nth-child(9) {
+        background-image: url("../img/project/e-school.webp");
+        @include bg-css;
+      }
+      &:nth-child(10) {
+        background-image: url("../img/project/email.webp");
+        @include bg-css;
+      }
+      &:nth-child(11) {
+        background-image: url("../img/project/minimo.webp");
+        @include bg-css;
+      }
+      &:nth-child(12) {
+        background-image: url("../img/project/saaslander.webp");
+        @include bg-css;
+      }
+      
     }
   }
 }
