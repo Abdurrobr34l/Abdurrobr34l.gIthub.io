@@ -353,14 +353,11 @@
 
 // Project Start
 .project {
-  height: 100vh;
   height: 100%;
-  // place-content: center;
 
   &__container {
     padding: 20px;
     text-align: center;
-    border: 2px solid aliceblue;
   }
 
   &__filter {

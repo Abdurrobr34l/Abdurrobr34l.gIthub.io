@@ -471,13 +471,11 @@ nav ul {
 }
 
 .project {
-  height: 100vh;
   height: 100%;
 }
 .project__container {
   padding: 20px;
   text-align: center;
-  border: 2px solid aliceblue;
 }
 .project__filter {
   -webkit-box-orient: vertical;
