@@ -45,7 +45,8 @@ html {
   background-color: #1c2833;
 }
 
-.about {
+.about,
+.service {
   background-color: #ecf0f1;
 }
 
@@ -655,4 +656,42 @@ nav ul {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.service {
+  place-content: center;
+  height: 100vh;
+}
+.service__wrapper {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+  border: 1px solid green;
+}
+.service__wrapper-box {
+  padding: 20px;
+  width: 32.33%;
+  height: 250px;
+  border: 1px solid red;
+}
+.service__wrapper-box i {
+  font-size: 40px;
+  font-weight: bold;
+  color: #1abc9c;
+}
+.service__wrapper-box h2 {
+  margin: 20px 0;
+  font-weight: 700;
+}
+.service__wrapper-box p {
+  font-weight: 500;
+  color: #1c2833;
+  line-height: 25px;
+}
+.service__btn {
+  margin: 30px auto 0;
+  text-align: center;
 }

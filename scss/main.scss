@@ -518,3 +518,46 @@
   }
 }
 // Project End
+
+// Service Start
+.service {
+  place-content: center;
+  height: 100vh;
+
+  &__wrapper {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    border: 1px solid green;
+
+    &-box {
+      padding: 20px;
+      width: 32.33%;
+      height: 250px;
+      border: 1px solid red;
+
+      i {
+        font-size: 40px;
+        font-weight: bold;
+        color: $accent-clr;
+      }
+
+      h2 {
+        margin: 20px 0;
+        font-weight: 700;
+      }
+
+      p {
+        font-weight: 500;
+        color: $primary-clr;
+        line-height: 25px;
+      }
+    }
+  }
+
+  &__btn {
+    margin: 30px auto 0;
+    text-align: center;
+  }
+}
+// Service End
