@@ -659,8 +659,7 @@ nav ul {
 }
 
 .service {
-  place-content: center;
-  height: 100vh;
+  height: 100%;
 }
 .service__wrapper {
   -webkit-box-pack: center;
@@ -669,13 +668,22 @@ nav ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 20px;
-  border: 1px solid green;
 }
 .service__wrapper-box {
+  place-content: center;
   padding: 20px;
-  width: 32.33%;
-  height: 250px;
-  border: 1px solid red;
+  width: 32%;
+  height: 280px;
+  border-radius: 8px;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  cursor: default;
+}
+.service__wrapper-box:hover {
+  -webkit-box-shadow: hsla(168, 76%, 42%, 0.55) 0px 2px 8px 0px;
+          box-shadow: hsla(168, 76%, 42%, 0.55) 0px 2px 8px 0px;
 }
 .service__wrapper-box i {
   font-size: 40px;
@@ -692,6 +700,6 @@ nav ul {
   line-height: 25px;
 }
 .service__btn {
-  margin: 30px auto 0;
+  margin: 40px auto 0;
   text-align: center;
 }

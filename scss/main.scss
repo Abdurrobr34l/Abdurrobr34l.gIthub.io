@@ -381,7 +381,7 @@
       color: $primary-clr;
       background-color: $accent-clr;
       border: 1px solid transparent;
-      border-radius: 8px;
+      border-radius: $border-radius;
       transition: 0.3s ease-in-out;
 
       &:hover {
@@ -413,7 +413,7 @@
 
       background: rgba(236, 240, 241, 0.151);
 
-      border-radius: 8px;
+      border-radius: $border-radius;
       transition: opacity 0.23s ease-in-out, transform 0.23s ease-in-out;
       transform: scale(1);
       opacity: 1;
@@ -434,7 +434,7 @@
         height: 100%;
 
         background: linear-gradient(180deg, #1abc9c4d 0%, #1abc9c4d 100%);
-        border-radius: 8px;
+        border-radius: $border-radius;
         opacity: 0;
         background-color: rgba(245, 245, 245, 0.616);
 
@@ -521,20 +521,26 @@
 
 // Service Start
 .service {
-  place-content: center;
-  height: 100vh;
+  height: 100%;
 
   &__wrapper {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    border: 1px solid green;
 
     &-box {
+      place-content: center;
       padding: 20px;
-      width: 32.33%;
-      height: 250px;
-      border: 1px solid red;
+      width: 32%;
+      height: 280px;
+      border-radius: $border-radius;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      transition: 0.3s ease-in-out;
+      cursor: default;
+
+      &:hover {
+        box-shadow: hsla(168, 76%, 42%, 0.55) 0px 2px 8px 0px;
+      }
 
       i {
         font-size: 40px;
@@ -556,7 +562,7 @@
   }
 
   &__btn {
-    margin: 30px auto 0;
+    margin: 40px auto 0;
     text-align: center;
   }
 }

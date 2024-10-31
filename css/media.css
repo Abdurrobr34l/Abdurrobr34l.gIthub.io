@@ -114,6 +114,12 @@
   .project__filter-box .overlay i {
     font-size: 20px;
   }
+  .service__wrapper {
+    gap: 30px;
+  }
+  .service__wrapper-box {
+    width: 100%;
+  }
 }
 /* SMALL DEVICES (LANSCAPE PHONE, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -162,6 +168,12 @@
   }
   .about__left-social i {
     font-size: 30px;
+  }
+  .service__wrapper {
+    gap: 30px;
+  }
+  .service__wrapper-box {
+    width: 100%;
   }
 }
 /* MEDIUM DEVICES (TABLETS, 768px and up) */
@@ -215,6 +227,9 @@
     width: 300px;
     height: 300px;
   }
+  .service__wrapper-box {
+    width: 48%;
+  }
 }
 /* LARGE DEVICES (DESKTOPS, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -226,6 +241,9 @@
   }
   .hero {
     place-content: center;
+  }
+  .service__wrapper-box {
+    width: 48%;
   }
 }
 /* EXTRA LARGE DEVICES (LARGE DESKTOPS, 1200px and up) */
