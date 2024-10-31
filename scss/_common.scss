@@ -17,7 +17,9 @@ html {
 // Sections Common BG Color
 .header,
 .hero,
-.project {
+.project,
+.contact,
+.footer {
   background-color: $primary-clr;
 }
 
@@ -66,25 +68,18 @@ i {
 
 // Go-To-Top Button
 .go-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 8px;
-  width: 40px;
-  height: 45px;
-  background-color: $accent-clr;
-  color: $primary-clr;
-  border-radius: 50%;
-  // opacity: 0.8;
   display: none;
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  color: $accent-clr;
   text-align: center;
-  font-size: 24px;
+  line-height: 1;
 
   &:hover {
-    color: $accent-clr;
-    outline:  2px solid $accent-clr;
-    background-color: $primary-clr;
-    // opacity: 1;
+    color: $primary-clr;
   }
 }
 

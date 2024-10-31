@@ -567,3 +567,38 @@
   }
 }
 // Service End
+
+// Footer Start
+.footer {
+  padding: 25px 0 20px;
+  border-top: 1px solid $section-bg-clr;
+  border-image: linear-gradient(
+      to right,
+      transparent 5%,
+      #81818161 50%,
+      transparent 95%
+    )
+    1;
+
+  &__container {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__copywrite {
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  &__social {
+    align-items: center;
+    gap: 10px;
+    color: $text-clr;
+
+    span {
+      font-size: 12px;
+      font-weight: 600;
+    }
+  }
+}
+// Footer End

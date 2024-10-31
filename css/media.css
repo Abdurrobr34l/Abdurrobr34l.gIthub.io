@@ -22,6 +22,9 @@
   .hero__image {
     grid-area: 1/1/1/12;
   }
+  .footer__copywrite {
+    font-size: 10px;
+  }
 }
 /* MOBILE (L - M) DEVICES (PORTRAIT PHONE, less than 576px) */
 @media (max-width: 575.98px) {

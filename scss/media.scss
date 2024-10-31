@@ -31,6 +31,14 @@
     }
   }
   // HERO END
+
+  // FOOTER START
+  .footer {
+    &__copywrite {
+      font-size: 10px;
+    }
+  }
+  // FOOTER END
 }
 
 /* MOBILE (L - M) DEVICES (PORTRAIT PHONE, less than 576px) */
@@ -168,17 +176,17 @@
   }
   // PROJECT END
 
-    // SERVICE START
-    .service {
-      &__wrapper {
-        gap: 30px;
-  
-        &-box {
-          width: 100%;
-        }
+  // SERVICE START
+  .service {
+    &__wrapper {
+      gap: 30px;
+
+      &-box {
+        width: 100%;
       }
     }
-    // SERVICE END
+  }
+  // SERVICE END
 }
 
 /* SMALL DEVICES (LANSCAPE PHONE, 576px and up) */
