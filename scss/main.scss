@@ -410,9 +410,7 @@
       display: block;
       width: 400px;
       height: 400px;
-
-      background: rgba(236, 240, 241, 0.151);
-
+      background-color: $box-bg;
       border-radius: $border-radius;
       transition: opacity 0.23s ease-in-out, transform 0.23s ease-in-out;
       transform: scale(1);
@@ -567,6 +565,93 @@
   }
 }
 // Service End
+
+// Contact Start
+.contact {
+  height: 100%;
+  border: 1px solid red;
+
+  &__container {
+    border: 1px solid #fff;
+    justify-content: space-between;
+    gap: 20px;
+    width: 70%;
+  }
+
+  &__info,
+  &__form {
+    border: 1px solid cyan;
+    flex: 1;
+  }
+
+  &__info {
+    flex-direction: column;
+    gap: 20px;
+    
+    h4 {
+      margin-bottom: 15px;
+      font-size: 18px;
+      font-weight: 500;
+      color: $text-clr;
+    }
+
+    &-box {
+      gap: 20px;
+
+      .icon {
+        :hover {
+          color: #fff;
+          cursor: default;
+        }
+
+        i {
+          padding: 15px;
+          border: 1px solid #fff;
+          border-radius: 50%;
+
+          :hover {
+            color: #fff;
+            cursor: default;
+          }
+        }
+      }
+
+      .content {
+        :first-child {
+          font-weight: 700;
+        }
+
+        :last-child {
+          margin-top: 5px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  &__form {
+    &-name,
+    &-email,
+    &-message {
+      flex-direction: column;
+      gap: 15px;
+      padding: 10px 0;
+      color: $text-clr;
+      border: 1px solid red;
+
+      input,
+      textarea {
+        padding: 20px 0;
+        border-radius: $border-radius;
+      }
+
+      textarea {
+        padding: 40px 0;
+      }
+    }
+  }
+}
+// Contact End
 
 // Footer Start
 .footer {
