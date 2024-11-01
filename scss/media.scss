@@ -167,6 +167,7 @@
         height: 250px;
 
         .overlay {
+          place-content: center;
           i {
             font-size: 20px;
           }
@@ -187,6 +188,32 @@
     }
   }
   // SERVICE END
+
+  // CONTACT START
+  .contact {
+    padding: 40px 0;
+
+    &__container {
+      flex-direction: column-reverse;
+      gap: 50px;
+      padding: 5px;
+      width: 90%;
+    }
+
+    &__info,
+    &__form {
+      width: 100%;
+    }
+
+    &__info {
+      gap: 30px;
+      
+      &-box {
+        gap: 10px;
+      }
+    }
+  }
+  // CONTACT END
 }
 
 /* SMALL DEVICES (LANSCAPE PHONE, 576px and up) */
@@ -267,6 +294,21 @@
     }
   }
   // SERVICE END
+
+  // CONTACT START
+  .contact {
+    &__container {
+      flex-direction: column-reverse;
+      gap: 60px;
+      padding: 20px;
+    }
+
+    &__info,
+    &__form {
+      width: 100%;
+    }
+  }
+  // CONTACT END
 }
 
 /* MEDIUM DEVICES (TABLETS, 768px and up) */
@@ -354,6 +396,21 @@
     }
   }
   // SERVICE END
+
+  // CONTACT START
+  .contact {
+    &__container {
+      flex-direction: column-reverse;
+      gap: 60px;
+      padding: 20px;
+    }
+
+    &__info,
+    &__form {
+      width: 100%;
+    }
+  }
+  // CONTACT END
 }
 
 /* LARGE DEVICES (DESKTOPS, 992px and up) */

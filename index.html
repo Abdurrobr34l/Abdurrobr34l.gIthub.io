@@ -333,10 +333,15 @@
   <!-- SERVICE END -->
 
   <!-- CONTACT ME START -->
-  <div class="contact section-padding" id="contact">
+  <div class="contact" id="contact">
     <div class="contact__container container flex">
+      <!-- Info -->
       <div class="contact__info flex">
-        <h4>Feel free to contact me for ur upcoming work.</h4>
+        
+        <!-- Title -->
+        <div class="contact__info-title">
+          <h4>Let's Bring Your Ideas to Life! Reach out and let’s make something great together.</h4>
+        </div>
 
         <!-- Email -->
         <div class="contact__info-box flex">
@@ -365,27 +370,29 @@
         </div>
 
       </div>
+      <!-- Form -->
       <div class="contact__form">
+        <!-- Form -->
         <form action="#">
           <!-- Name -->
           <div class="contact__form-name flex">
             <label for="name">Name</label>
-            <input type="text" name="name" required>
+            <input type="text" name="name" id="name" required>
           </div>
 
           <!-- Email -->
           <div class="contact__form-email flex">
             <label for="name">Email</label>
-            <input type="email" name="email"required>
+            <input type="email" name="email" id="email" required>
           </div>
 
           <!-- Message -->
           <div class="contact__form-message flex">
             <label for="name">Message</label>
-            <textarea name="message" required></textarea>
+            <textarea name="message" id="message" required></textarea>
           </div>
 
-          <button type="submit">Send Me Message</button>
+          <button type="submit" class="contact__form-btn btn">Send Me Message</button>
         </form>
       </div>
     </div>

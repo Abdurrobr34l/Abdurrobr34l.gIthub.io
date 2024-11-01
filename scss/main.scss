@@ -568,25 +568,24 @@
 
 // Contact Start
 .contact {
+  padding: 60px 0;
   height: 100%;
-  border: 1px solid red;
 
   &__container {
-    border: 1px solid #fff;
     justify-content: space-between;
+    align-items: center;
     gap: 20px;
-    width: 70%;
+    width: 80%;
   }
 
   &__info,
   &__form {
-    border: 1px solid cyan;
     flex: 1;
   }
 
   &__info {
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
     
     h4 {
       margin-bottom: 15px;
@@ -596,6 +595,7 @@
     }
 
     &-box {
+      align-items: center;
       gap: 20px;
 
       .icon {
@@ -634,20 +634,29 @@
     &-email,
     &-message {
       flex-direction: column;
-      gap: 15px;
+      gap: 10px;
       padding: 10px 0;
+      outline: none; 
+      box-shadow: none;
       color: $text-clr;
-      border: 1px solid red;
+
+      :focus {
+        outline: none;
+      }
 
       input,
       textarea {
-        padding: 20px 0;
+        padding: 20px;
         border-radius: $border-radius;
       }
 
       textarea {
-        padding: 40px 0;
+        height: 100px;
       }
+    }
+
+    &-btn {
+      margin-top: 20px;
     }
   }
 }
