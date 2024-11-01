@@ -35,6 +35,16 @@ html {
   scroll-behavior: smooth;
 }
 
+::-moz-selection {
+  color: #1c2833;
+  background-color: #1abc9c;
+}
+
+::selection {
+  color: #1c2833;
+  background-color: #1abc9c;
+}
+
 .section-padding {
   padding: 50px 0 30px;
 }
@@ -767,6 +777,8 @@ nav ul {
 }
 .contact__form-name :focus, .contact__form-email :focus, .contact__form-message :focus {
   outline: none;
+  border: none;
+  border-color: #1abc9c;
 }
 .contact__form-name input,
 .contact__form-name textarea, .contact__form-email input,

@@ -112,10 +112,10 @@ window.onload = function () {
 // TYPEWRITER EFFECT FOR ABOUT ME SECTION END ---------
 
 // PROJECT FILTER START ---------
-$(document).ready(function() {
-  $('.list').click(function() {
+$(document).ready(function () {
+  $('.list').click(function () {
     const value = $(this).attr('data-filter');
-    
+
     if (value === 'all') {
       // Show all items when 'all' is selected
       $('.itemBox').show(1000);
@@ -124,9 +124,14 @@ $(document).ready(function() {
       $('.itemBox').not('.' + value).hide(1000);
       $('.itemBox').filter('.' + value).show(1000);
     }
-    
+
     // Add active class to selected filter button
     $(this).addClass('active').siblings().removeClass('active');
   });
 });
 // PROJECT FILTER END ---------
+
+// FOOTER START ---------
+// made the copywrite year dynamic as year changes its no. also changes
+document.getElementById("year").textContent = new Date().getFullYear(); F
+// FOOFTER END ---------

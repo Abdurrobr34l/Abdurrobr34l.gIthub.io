@@ -642,6 +642,8 @@
 
       :focus {
         outline: none;
+        border: none;
+        border-color: $accent-clr;
       }
 
       input,
