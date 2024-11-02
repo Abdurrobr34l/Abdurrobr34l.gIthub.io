@@ -135,7 +135,7 @@ $(document).ready(function () {
 document.getElementById("contact-form").addEventListener("submit", function(event) {
   event.preventDefault(); // Prevent the default form submission
 
-  // Replace 'YOUR_TEMPLATE_ID' with your actual Template ID
+  // Use your correct Template ID and Service ID
   emailjs.sendForm('service_hyp2xhf', 'template_m0p26et', this)
       .then(function(response) {
           console.log('SUCCESS!', response.status, response.text);
@@ -153,5 +153,11 @@ document.getElementById("contact-form").addEventListener("submit", function(even
 
 // FOOTER START ---------
 // made the copywrite year dynamic as year changes its no. also changes
-document.getElementById("year").textContent = new Date().getFullYear(); F
+// document.getElementById("year").textContent = new Date().getFullYear(); F
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Make the copyright year dynamic
+  document.getElementById("year").textContent = new Date().getFullYear();
+});
+
 // FOOFTER END ---------
