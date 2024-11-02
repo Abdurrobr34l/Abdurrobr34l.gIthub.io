@@ -2,21 +2,23 @@
 <html lang="en">
 
 <head>
-  <!-- Meta Tags -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abdur Rob | Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Abdur Rob</title>
+  <meta name="author" content="Abdur Rob">
   <meta name="description"
     content="Welcome to Abdur Rob's portfolio. Explore my web development projects, skills, and learn more about my journey as a frontend developer.">
   <meta name="keywords"
     content="Abdur Rob, frontend developer, web development, portfolio, JavaScript, CSS, HTML, projects">
   <meta name="robots" content="index, follow">
+
   <!-- Open Graph Tags -->
   <meta property="og:title" content="Abdur Rob | Frontend Developer & Portfolio">
   <meta property="og:description" content="Explore my web development projects and skills as a frontend developer.">
   <meta property="og:image" content="url_to_image.jpg">
   <meta property="og:url" content="https://yourwebsite.com">
   <meta property="og:type" content="website">
+
   <!-- Twitter Card Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Abdur Rob | Frontend Developer & Portfolio">
@@ -35,55 +37,6 @@
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- <style>
-.project__filter-boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  width: 100%;
-  border: 1px solid greenyellow;
-}
-
-.project__filter-box {
-  display: block;
-  width: 300px;
-  height: 300px;
-  opacity: 1;
-  transform: scale(1);
-  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
-  border: 1px solid #fff;
-  background-color: #f0f0f0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* .project__filter-box.hiding {
-  opacity: 0;
-  transform: scale(0.9); /* Smooth shrinking effect */
-  /* pointer-events: none; Prevent interaction */
-/* } */
-
-.project__filter-box.hide {
-  display: none; /* Final hide state after the transition */
-} */
-
-.project__filter-btn {
-  padding: 10px 20px;
-  background-color: #3498db;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.project__filter-btn:hover {
-  background-color: #2980b9;
-}
-
-    </style> -->
 </head>
 
 <body>
@@ -267,31 +220,7 @@
   
   <script src="js/jquery-3.7.1.min.js"></script>
   <script src="js/script.js"></script>
-  
-  
-
-
-  <script>
-    // $(document).ready(function () {
-    //   $('.list').click(function () {
-    //     const value = $(this).attr('data-filter');
-
-    //     if (value == 'all') {
-    //       // Show all items when 'all' is selected
-    //       $('.itemBox').show('1000');
-    //     } else {
-    //       // Hide items that do not match the filter and show those that match
-    //       $('.itemBox').not('.' + value).hide('1000');
-    //       $('.itemBox').filter('.' + value).show('1000');
-    //     }
-    //   });
-
-    //   // Add active class to selected filter button
-    //   $('.list').click(function () {
-    //     $(this).addClass('active').siblings().removeClass('active');
-    //   });
-    // });
-  </script>
+  <script src="js/year.js"></script>
 </body>
 
 </html>

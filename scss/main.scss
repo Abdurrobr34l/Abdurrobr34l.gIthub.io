@@ -642,8 +642,6 @@
 
       :focus {
         outline: none;
-        border: none;
-        border-color: $accent-clr;
       }
 
       input,
@@ -660,6 +658,10 @@
     &-btn {
       margin-top: 20px;
     }
+  }
+
+  #status {
+    margin-top: 10px;
   }
 }
 // Contact End

@@ -777,8 +777,6 @@ nav ul {
 }
 .contact__form-name :focus, .contact__form-email :focus, .contact__form-message :focus {
   outline: none;
-  border: none;
-  border-color: #1abc9c;
 }
 .contact__form-name input,
 .contact__form-name textarea, .contact__form-email input,
@@ -792,6 +790,9 @@ nav ul {
 }
 .contact__form-btn {
   margin-top: 20px;
+}
+.contact #status {
+  margin-top: 10px;
 }
 
 .footer {
