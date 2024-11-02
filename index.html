@@ -13,7 +13,7 @@
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph Tags -->
-  <meta property="og:title" content="Abdur Rob | Frontend Developer & Portfolio">
+  <meta property="og:title" content="Abdur Rob | Frontend Developer & WordPress Developer">
   <meta property="og:description" content="Explore my web development projects and skills as a frontend developer.">
   <meta property="og:image" content="url_to_image.jpg">
   <meta property="og:url" content="https://yourwebsite.com">
@@ -21,7 +21,7 @@
 
   <!-- Twitter Card Tags -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Abdur Rob | Frontend Developer & Portfolio">
+  <meta name="twitter:title" content="Abdur Rob | Frontend Developer & WordPress Developer">
   <meta name="twitter:description" content="Explore my web development projects and skills as a frontend developer.">
   <meta name="twitter:image" content="url_to_image.jpg">
 
@@ -33,9 +33,12 @@
   <link rel="icon" type="image/x-icon" href="img/favicon/fav.png">
 
   <!-- Font-Awsome CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
   <!-- Email Initialisation -->
   <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
@@ -50,7 +53,7 @@
 <body>
   <!-- Go-To-Top Button Start -->
   <!-- <a href="#" class="go-to-top" id="goToTop">↑</a> -->
-  <a href="#" class="go-to-top" id="goToTop">
+  <a href="#" class="go-to-top" id="goToTop" aria-label="it is for go to top button">
     <!-- G<br>O<br><br>T<br>O<br><br>T<br>O<br>P -->
     G<br>O<br><br>T<br>O<br>P
   </a>
@@ -62,21 +65,21 @@
       <div class="header__wrapper flex-wrapper">
         <!-- Logo -->
         <div class="header__logo">
-          <a href="index.html"><img src="img/logo/11.png" alt="it is abdurrobr34l website logo"></a>
+          <a href="index.html" aria-label="it is logo image"><img src="img/logo/11.png" alt="it is abdurrobr34l website logo"></a>
           <!-- <a href="index.html"><img src="img/logo/22.png" alt="it is abdurrobr34l website logo"></a> -->
         </div>
         <!-- Menus -->
         <nav class="header__nav">
           <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about" aria-label="it is link for about section">About</a></li>
+            <li><a href="#projects" aria-label="it is link for project section">Projects</a></li>
+            <li><a href="#services" aria-label="it is link for service section">Services</a></li>
+            <li><a href="#contact" aria-label="it is link for contact section">Contact</a></li>
           </ul>
         </nav>
         <!-- Header Button -->
         <div class="header__btn">
-          <a href="#contact" class="btn">Hire Me</a>
+          <a href="#contact" class="btn" aria-label="it is link for contact section">Hire Me</a>
         </div>
         <!-- Hamburger Menu Icon -->
         <div class="header__hamburgermenu-icon">
@@ -94,15 +97,15 @@
       <!-- Menus -->
       <nav class="hamburgermenu__nav flex">
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about" aria-label="it is link for about section">About</a></li>
+            <li><a href="#projects" aria-label="it is link for project section">Projects</a></li>
+            <li><a href="#services" aria-label="it is link for service section">Services</a></li>
+            <li><a href="#contact" aria-label="it is link for contact section">Contact</a></li>
         </ul>
       </nav>
       <!-- Header Button -->
       <div class="hamburgermenu__btn header__btn">
-        <a href="#contact" class="btn">Hire Me</a>
+        <a href="#contact" class="btn" aria-label="it is link for contact section">Hire Me</a>
       </div>
     </div>
   </div>
@@ -120,8 +123,8 @@
             <span>Frontend</span> & <span>WordPress development</span>, I build custom solutions that bring your ideas
             to life
           </p>
-          <a href="#about" class="btn">Learn More</a>
-          <a href="cv/cv.pdf" target="_blank" class="btn">Download CV</a>
+          <a href="#about" class="btn" aria-label="this link is for about section">Learn More</a>
+          <a href="cv/cv.pdf" target="_blank" class="btn" aria-label="this link is for cv of the author">Download CV</a>
         </div>
         <div class="hero__image box">
           <img src="img/hero/abdurrob.png" alt="it is the image of the author of this website, named abdurrobr34l">
@@ -195,7 +198,7 @@
               <br><br>
               I look forward to contributing to exciting projects and continuing my growth in this fast-paced field..
             </p>
-            <a href="#contact" class="about__right-text-btn btn">Get in touch</a>
+            <a href="#contact" class="about__right-text-btn btn" aria-label="it is link for contact section">Get in touch</a>
           </div>
           <!-- Skill Icon Start -->
           <div class="about__right-skill flex">
@@ -248,37 +251,37 @@
         <!-- 1 -->
         <div class="project__filter-box wordpress itemBox">
           <div class="overlay">
-            <a href="#" target="_blank"><i class="fa-solid fa-arrow-right-long"></i></a>
+            <a href="#" target="_blank" aria-label="this link are for particular projects links"><i class="fa-solid fa-arrow-right-long"></i></a>
           </div>
         </div>
         <!-- 2 -->
         <div class="project__filter-box wordpress itemBox">
           <div class="overlay">
-            <a href="#" target="_blank"><i class="fa-solid fa-arrow-right-long"></i></a>
+            <a href="#" target="_blank" aria-label="this link are for particular projects links"><i class="fa-solid fa-arrow-right-long"></i></a>
           </div>
         </div>
         <!-- 3 -->
         <div class="project__filter-box web itemBox">
           <div class="overlay">
-            <a href="#" target="_blank"><i class="fa-solid fa-arrow-right-long"></i></a>
+            <a href="#" target="_blank" aria-label="this link are for particular projects links"><i class="fa-solid fa-arrow-right-long"></i></a>
           </div>
         </div>
         <!-- 4 -->
         <div class="project__filter-box web itemBox">
           <div class="overlay">
-            <a href="#" target="_blank"><i class="fa-solid fa-arrow-right-long"></i></a>
+            <a href="#" target="_blank" aria-label="this link are for particular projects links"><i class="fa-solid fa-arrow-right-long"></i></a>
           </div>
         </div>
         <!-- 5 -->
         <div class="project__filter-box web itemBox">
           <div class="overlay">
-            <a href="#" target="_blank"><i class="fa-solid fa-arrow-right-long"></i></a>
+            <a href="#" target="_blank" aria-label="this link are for particular projects links"><i class="fa-solid fa-arrow-right-long"></i></a>
           </div>
         </div>
         <!-- 6 -->
         <div class="project__filter-box email itemBox">
           <div class="overlay">
-            <a href="#" target="_blank"><i class="fa-solid fa-arrow-right-long"></i></a>
+            <a href="#" target="_blank" aria-label="this link are for particular projects links"><i class="fa-solid fa-arrow-right-long"></i></a>
           </div>
         </div>
 
@@ -352,7 +355,7 @@
 
         <!-- Title -->
         <div class="contact__info-title">
-          <h4>Let's Bring Your Ideas to Life! Reach out and let’s make something great together.</h4>
+          <h2>Let's Bring Your Ideas to Life! Reach out and let’s make something great together.</h2>
         </div>
 
         <!-- Email -->
@@ -394,13 +397,13 @@
 
           <!-- Email -->
           <div class="contact__form-email flex">
-            <label for="name">Email</label>
+            <label for="email">Email</label>
             <input type="email" name="from_email" id="email" required>
           </div>
 
           <!-- Message -->
           <div class="contact__form-message flex">
-            <label for="name">Message</label>
+            <label for="message">Message</label>
             <textarea name="message" id="message" required></textarea>
           </div>
 
