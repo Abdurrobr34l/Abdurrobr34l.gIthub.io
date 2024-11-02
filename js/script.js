@@ -131,6 +131,26 @@ $(document).ready(function () {
 });
 // PROJECT FILTER END ---------
 
+// CONTACT ME FORM START ---------
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent the default form submission
+
+  // Replace 'YOUR_TEMPLATE_ID' with your actual Template ID
+  emailjs.sendForm('service_hyp2xhf', 'template_m0p26et', this)
+      .then(function(response) {
+          console.log('SUCCESS!', response.status, response.text);
+          document.getElementById("status").innerText = "Message sent successfully!";
+      }, function(error) {
+          console.log('FAILED...', error);
+          document.getElementById("status").innerText = "Failed to send message. Please try again.";
+      });
+
+  // Clear the form fields after submission
+  this.reset();
+});
+// CONTACT ME FORM END ---------
+
+
 // FOOTER START ---------
 // made the copywrite year dynamic as year changes its no. also changes
 document.getElementById("year").textContent = new Date().getFullYear(); F
