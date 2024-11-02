@@ -153,7 +153,7 @@ document.getElementById("contact-form").addEventListener("submit", function(even
 
 // FOOTER START ---------
 // made the copywrite year dynamic as year changes its no. also changes
-// document.getElementById("year").textContent = new Date().getFullYear(); F
+// document.getElementById("year").textContent = new Date().getFullYear();
 
 document.addEventListener("DOMContentLoaded", function() {
   // Make the copyright year dynamic
