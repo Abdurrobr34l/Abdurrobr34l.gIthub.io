@@ -486,7 +486,7 @@
       }
 
       &:nth-child(6) {
-        background-image: url("../img/project/email2.webp");
+        background-image: url("../img/project/e-commerce.webp");
         @include bg-css;
       }
       &:nth-child(7) {
@@ -498,11 +498,11 @@
         @include bg-css;
       }
       &:nth-child(9) {
-        background-image: url("../img/project/eschool.webp");
+        background-image: url("../img/project/e-school.webp");
         @include bg-css;
       }
       &:nth-child(10) {
-        background-image: url("../img/project/email.webp");
+        background-image: url("../img/project/email1.webp");
         @include bg-css;
       }
       &:nth-child(11) {
@@ -510,7 +510,15 @@
         @include bg-css;
       }
       &:nth-child(12) {
-        background-image: url("../img/project/old/saaslander.webp");
+        background-image: url("../img/project/ilander.webp");
+        @include bg-css;
+      }
+      &:nth-child(13) {
+        background-image: url("../img/project/email2.webp");
+        @include bg-css;
+      }
+      &:nth-child(14) {
+        background-image: url("../img/project/codext.webp");
         @include bg-css;
       }
     }

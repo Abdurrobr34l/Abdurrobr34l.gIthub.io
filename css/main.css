@@ -615,7 +615,7 @@ nav ul {
   background-position: center;
 }
 .project__filter-box:nth-child(6) {
-  background-image: url("../img/project/email2.webp");
+  background-image: url("../img/project/e-commerce.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -633,13 +633,13 @@ nav ul {
   background-position: center;
 }
 .project__filter-box:nth-child(9) {
-  background-image: url("../img/project/eschool.webp");
+  background-image: url("../img/project/e-school.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .project__filter-box:nth-child(10) {
-  background-image: url("../img/project/email.webp");
+  background-image: url("../img/project/email1.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -651,7 +651,19 @@ nav ul {
   background-position: center;
 }
 .project__filter-box:nth-child(12) {
-  background-image: url("../img/project/old/saaslander.webp");
+  background-image: url("../img/project/ilander.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.project__filter-box:nth-child(13) {
+  background-image: url("../img/project/email2.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.project__filter-box:nth-child(14) {
+  background-image: url("../img/project/codext.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
