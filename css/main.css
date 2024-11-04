@@ -27,11 +27,16 @@ img {
   height: auto;
 }
 
-body {
-  font-family: "Montserrat", sans-serif;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+body,
 html {
+  font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -47,6 +52,14 @@ html {
 
 .section-padding {
   padding: 50px 0 30px;
+}
+
+.hero,
+.about,
+.service,
+.contact {
+  min-height: 100vh;
+  place-content: center;
 }
 
 .header,
@@ -114,6 +127,7 @@ i:hover {
 .container {
   margin: 0 auto;
   width: 90%;
+  max-width: 1536px;
 }
 
 .flex-wrapper,
@@ -240,10 +254,6 @@ nav ul {
   overflow: hidden;
 }
 
-.hero {
-  place-content: center;
-  height: 100vh;
-}
 .hero__wrapper {
   grid-template-columns: repeat(12, 1fr);
   -webkit-box-align: center;
@@ -305,10 +315,6 @@ nav ul {
   font-size: 15px;
 }
 
-.about {
-  height: 100vh;
-  place-content: center;
-}
 .about__wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -563,7 +569,7 @@ nav ul {
 .project__filter-box .overlay {
   place-content: center;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(26, 188, 156, 0.3019607843)), to(rgba(26, 188, 156, 0.3019607843)));
   background: linear-gradient(180deg, rgba(26, 188, 156, 0.3019607843) 0%, rgba(26, 188, 156, 0.3019607843) 100%);
   border-radius: 8px;
@@ -669,9 +675,6 @@ nav ul {
   background-position: center;
 }
 
-.service {
-  height: 100%;
-}
 .service__wrapper {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -717,7 +720,6 @@ nav ul {
 
 .contact {
   padding: 60px 0;
-  height: 100%;
 }
 .contact__container {
   -webkit-box-pack: justify;

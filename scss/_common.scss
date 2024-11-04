@@ -1,11 +1,16 @@
 // Font Family
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-body {
-  font-family: "Montserrat", sans-serif;
+* {
+  // overflow: auto;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+body,
 html {
+  font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -17,6 +22,15 @@ html {
 // Section Padding
 .section-padding {
   padding: 50px 0 30px;
+}
+
+// Section Common CSS
+.hero,
+.about,
+.service,
+.contact{
+  min-height: 100vh;
+  place-content: center;
 }
 
 // Sections Common BG Color
@@ -92,7 +106,7 @@ i {
 .container {
   margin: 0 auto;
   width: 90%;
-  // border: 1px solid white;
+  max-width: 1536px;
 }
 
 .flex-wrapper,

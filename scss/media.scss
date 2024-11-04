@@ -463,3 +463,13 @@
 /* EXTRA EXTRA LARGE DEVICES (LARGE DESKTOPS, 1400px and up) */
 @media (min-width: 1400px) {
 }
+
+// @media (min-width: 1537px) and (max-width: 6500px) 
+@media (min-width: 1537px) {
+  .hero,
+  .about,
+  .service,
+  .contact {
+    min-height: initial;
+  }
+}
