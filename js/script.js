@@ -1,3 +1,8 @@
+// IF YOU WANT TO MAKE THE MOUSE RIGHT BUTTON CLICK TURN OFF THEN USE THIS BELOW CODE 
+// window.oncontextmenu = function (){
+// 	return false;
+// }
+
 // GO-TO-TOP BUTTON START
 window.onscroll = function () {
   var button = document.getElementById('goToTop');
