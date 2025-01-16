@@ -269,7 +269,7 @@
         position: absolute;
         left: 100%;
         animation-name: scrollLeft;
-        animation-duration: 35s;
+        animation-duration: 40s;
         animation-timing-function: linear;
         animation-iteration-count: infinite;
 
@@ -326,9 +326,6 @@
 
       .icon5 {
         animation-delay: 20s;
-
-        i {
-          color: #7f18f9;
         }
       }
 
@@ -336,7 +333,7 @@
         animation-delay: 25s;
 
         i {
-          color: #28799e;
+          color: #7f18f9;
         }
       }
 
@@ -344,12 +341,19 @@
         animation-delay: 30s;
 
         i {
+          color: #28799e;
+        }
+      }
+
+      .icon8 {
+        animation-delay: 35s;
+
+        i {
           color: $primary-clr;
         }
       }
     }
   }
-}
 // About Me End
 
 // Project Start

@@ -99,10 +99,10 @@ a:hover {
   color: #1abc9c;
 }
 
-i {
+i, svg {
   color: #f5f5f5;
 }
-i:hover {
+i:hover, svg:hover {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   color: #1abc9c;
@@ -394,8 +394,8 @@ nav ul {
   left: 100%;
   -webkit-animation-name: scrollLeft;
           animation-name: scrollLeft;
-  -webkit-animation-duration: 35s;
-          animation-duration: 35s;
+  -webkit-animation-duration: 40s;
+          animation-duration: 40s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
@@ -458,21 +458,25 @@ nav ul {
   -webkit-animation-delay: 20s;
           animation-delay: 20s;
 }
-.about__right-skill .icon5 i {
-  color: #7f18f9;
-}
-.about__right-skill .icon6 {
+.about__right .icon6 {
   -webkit-animation-delay: 25s;
           animation-delay: 25s;
 }
-.about__right-skill .icon6 i {
-  color: #28799e;
+.about__right .icon6 i {
+  color: #7f18f9;
 }
-.about__right-skill .icon7 {
+.about__right .icon7 {
   -webkit-animation-delay: 30s;
           animation-delay: 30s;
 }
-.about__right-skill .icon7 i {
+.about__right .icon7 i {
+  color: #28799e;
+}
+.about__right .icon8 {
+  -webkit-animation-delay: 35s;
+          animation-delay: 35s;
+}
+.about__right .icon8 i {
   color: #1c2833;
 }
 
