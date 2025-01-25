@@ -1,22 +1,18 @@
 // Font Family
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-* {
-  // overflow: auto;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+// * {
+//   // overflow: auto;
+//   box-sizing: border-box;
+//   margin: 0;
+//   padding: 0;
+// }
 
 body,
 html {
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
-}
-
-::selection {
-  color: $primary-clr;
-  background-color: $accent-clr;
+  user-select: none;
 }
 
 // Section Padding
@@ -100,26 +96,4 @@ i, svg {
   &:hover {
     color: $primary-clr;
   }
-}
-
-// Common Blocks
-.container {
-  margin: 0 auto;
-  width: 90%;
-  max-width: 1536px;
-}
-
-.flex-wrapper,
-nav ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.grid {
-  display: grid;
-}
-
-.flex {
-  display: flex;
 }

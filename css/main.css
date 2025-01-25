@@ -27,27 +27,14 @@ img {
   height: auto;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body,
 html {
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
-}
-
-::-moz-selection {
-  color: #1c2833;
-  background-color: #1abc9c;
-}
-
-::selection {
-  color: #1c2833;
-  background-color: #1abc9c;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .section-padding {
@@ -151,6 +138,10 @@ nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .header {
@@ -383,7 +374,7 @@ nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 40px 0 30px;
+  padding: 40px 0;
   -webkit-mask-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(20%, rgb(0, 0, 0)), color-stop(80%, rgb(0, 0, 0)), to(rgba(0, 0, 0, 0)));
   -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0));
           mask-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(20%, rgb(0, 0, 0)), color-stop(80%, rgb(0, 0, 0)), to(rgba(0, 0, 0, 0)));
@@ -394,21 +385,15 @@ nav ul {
   left: 100%;
   -webkit-animation-name: scrollLeft;
           animation-name: scrollLeft;
-  -webkit-animation-duration: 40s;
-          animation-duration: 40s;
+  -webkit-animation-duration: 36s;
+          animation-duration: 36s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
-.about__right-skill .icon i {
-  font-size: 50px;
-}
-.about__right-skill .icon i:hover {
-  color: #1abc9c;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  cursor: default;
+.about__right-skill .icon img {
+  width: 50px;
 }
 @-webkit-keyframes scrollLeft {
   from {
@@ -426,58 +411,99 @@ nav ul {
     left: -100px;
   }
 }
-.about__right-skill .icon1 {
+.about__right-skill .html {
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
 }
-.about__right-skill .icon1 i {
-  color: #dd4b24;
+.about__right-skill .css {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
-.about__right-skill .icon2 {
+.about__right-skill .javascript {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+.about__right-skills {
+  overflow: hidden;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 0;
+  -webkit-mask-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(20%, rgb(0, 0, 0)), color-stop(80%, rgb(0, 0, 0)), to(rgba(0, 0, 0, 0)));
+  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0));
+          mask-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(20%, rgb(0, 0, 0)), color-stop(80%, rgb(0, 0, 0)), to(rgba(0, 0, 0, 0)));
+          mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0));
+  border: 1px solid green;
+  position: absolute;
+  right: 100%;
+  -webkit-animation-name: scrollright;
+          animation-name: scrollright;
+}
+.about__right-skills .icon {
+  position: absolute;
+  left: 100%;
+  -webkit-animation-name: scrollright;
+          animation-name: scrollright;
+  -webkit-animation-duration: 31s;
+          animation-duration: 31s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.about__right-skills .icon img {
+  width: 50px;
+}
+.about__right-skills-skills .icon {
+  position: absolute;
+  right: 100% !important;
+  -webkit-animation-name: scrollright;
+          animation-name: scrollright;
+}
+@-webkit-keyframes scrollright {
+  from {
+    right: 100%;
+  }
+  to {
+    right: -100px;
+  }
+}
+@keyframes scrollright {
+  from {
+    right: 100%;
+  }
+  to {
+    right: -100px;
+  }
+}
+.about__right-skills .sass {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.about__right-skills .tailwindcss {
   -webkit-animation-delay: 5s;
           animation-delay: 5s;
 }
-.about__right-skill .icon2 i {
-  color: #254bde;
-}
-.about__right-skill .icon3 {
+.about__right-skills .bootstrap {
   -webkit-animation-delay: 10s;
           animation-delay: 10s;
 }
-.about__right-skill .icon3 i {
-  color: #d1689a;
-}
-.about__right-skill .icon4 {
+.about__right-skills .git {
   -webkit-animation-delay: 15s;
           animation-delay: 15s;
 }
-.about__right-skill .icon4 i {
-  color: #f4e225;
-}
-.about__right-skill .icon5 {
+.about__right-skills .vite {
   -webkit-animation-delay: 20s;
           animation-delay: 20s;
 }
-.about__right .icon6 {
+.about__right-skills .wordpress {
   -webkit-animation-delay: 25s;
           animation-delay: 25s;
 }
-.about__right .icon6 i {
-  color: #7f18f9;
-}
-.about__right .icon7 {
-  -webkit-animation-delay: 30s;
-          animation-delay: 30s;
-}
-.about__right .icon7 i {
-  color: #28799e;
-}
-.about__right .icon8 {
-  -webkit-animation-delay: 35s;
-          animation-delay: 35s;
-}
-.about__right .icon8 i {
-  color: #1c2833;
+.about__right-skills .email {
+  -webkit-animation-delay: 30.5s;
+          animation-delay: 30.5s;
 }
 
 .project {

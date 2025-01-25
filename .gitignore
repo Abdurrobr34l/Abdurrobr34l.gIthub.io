@@ -6,15 +6,6 @@ node_modules/
 package-lock.json
 package.json
 
-# Ignore compiled files
-*.class
-*.pyc
-*.o
-*.exe
-
-# Ignore environment files
-.env
-
 # Ignore all files in the temp directory
 scss/
 cv/
