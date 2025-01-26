@@ -375,9 +375,9 @@ nav ul {
   border: 1px solid transparent;
 }
 .about__right .about__right-skill-wrapper {
-  height: 110px;
-  position: relative;
   overflow: hidden;
+  position: relative;
+  height: 110px;
   -webkit-mask-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(20%, rgb(0, 0, 0)), color-stop(80%, rgb(0, 0, 0)), to(rgba(0, 0, 0, 0)));
   -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0));
           mask-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(20%, rgb(0, 0, 0)), color-stop(80%, rgb(0, 0, 0)), to(rgba(0, 0, 0, 0)));
@@ -405,11 +405,11 @@ nav ul {
 }
 .about__right .about__right-skill-wrapper .itemLeft,
 .about__right .about__right-skill-wrapper .itemRight {
+  position: absolute;
+  padding: 10px 0;
+  width: 130px;
   border-radius: 8px;
   background-color: #f5f5f5;
-  width: 130px;
-  padding: 10px 0;
-  position: absolute;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-duration: 40s;
@@ -567,85 +567,91 @@ nav ul {
   color: #1abc9c;
 }
 .project__filter-box:nth-child(1) {
-  background-image: url("../img/project/agency.webp");
+  background-image: url("../../img/project/agency.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .project__filter-box:nth-child(2) {
-  background-image: url("../img/project/news.webp");
+  background-image: url("../../img/project/news.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .project__filter-box:nth-child(3) {
-  background-image: url("../img/project/edutech.webp");
+  background-image: url("../../img/project/edutech.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .project__filter-box:nth-child(4) {
-  background-image: url("../img/project/bookmark.webp");
+  background-image: url("../../img/project/bookmark.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .project__filter-box:nth-child(5) {
-  background-image: url("../img/project/entripoti.webp");
+  background-image: url("../../img/project/entripoti.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .project__filter-box:nth-child(6) {
-  background-image: url("../img/project/e-commerce.webp");
+  background-image: url("../../img/project/email1.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .project__filter-box:nth-child(7) {
-  background-image: url("../img/project/nipro.webp");
+  background-image: url("../../img/project/tailwind-login.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .project__filter-box:nth-child(8) {
-  background-image: url("../img/project/taxicab.webp");
+  background-image: url("../../img/project/taxicab.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .project__filter-box:nth-child(9) {
-  background-image: url("../img/project/e-school.webp");
+  background-image: url("../../img/project/e-school.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .project__filter-box:nth-child(10) {
-  background-image: url("../img/project/email1.webp");
+  background-image: url("../../img/project/email2.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .project__filter-box:nth-child(11) {
-  background-image: url("../img/project/minimo.webp");
+  background-image: url("../../img/project/minimo.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .project__filter-box:nth-child(12) {
-  background-image: url("../img/project/ilander.webp");
+  background-image: url("../../img/project/ilander.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .project__filter-box:nth-child(13) {
-  background-image: url("../img/project/email2.webp");
+  background-image: url("../../img/project/e-commerce.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .project__filter-box:nth-child(14) {
-  background-image: url("../img/project/codext.webp");
+  background-image: url("../../img/project/codext.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.project__filter-box:nth-child(15) {
+  background-image: url("../../img/project/nipro.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

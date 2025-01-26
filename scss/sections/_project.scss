@@ -1,3 +1,5 @@
+@import "../variables";
+
 .project {
   height: 100%;
 
@@ -105,65 +107,109 @@
       }
 
       // Here u can add bg image of your projects
-      &:nth-child(1) {
-        background-image: url("../img/project/agency.webp");
+      //WORDDPRESS-1
+      &:nth-child(1) { 
+        // background-image: url("../img/project/agency.webp");
+        background-image: url("../../img/project/agency.webp");
         @include bg-css;
       }
 
+      //WORDDPRESS-2
       &:nth-child(2) {
-        background-image: url("../img/project/news.webp");
+        // background-image: url("../img/project/news.webp");
+        background-image: url("../../img/project/news.webp");
         @include bg-css;
       }
 
+      // BOOTSTRAP-1
       &:nth-child(3) {
-        background-image: url("../img/project/edutech.webp");
+        // background-image: url("../img/project/edutech.webp");
+        background-image: url("../../img/project/edutech.webp");
         @include bg-css;
       }
 
+      // RAW CSS-1
       &:nth-child(4) {
-        background-image: url("../img/project/bookmark.webp");
+        // background-image: url("../img/project/bookmark.webp");
+        background-image: url("../../img/project/bookmark.webp");
         @include bg-css;
       }
 
+      // RAW CSS-2
       &:nth-child(5) {
-        background-image: url("../img/project/entripoti.webp");
+        // background-image: url("../img/project/entripoti.webp");
+        background-image: url("../../img/project/entripoti.webp");
         @include bg-css;
       }
 
+      //EMAIL-1
       &:nth-child(6) {
-        background-image: url("../img/project/e-commerce.webp");
+        // background-image: url("../img/project/email1");
+        background-image: url("../../img/project/email1.webp");
         @include bg-css;
       }
+
+      // BOOTSTRAP-2 (tailwind for now)
       &:nth-child(7) {
-        background-image: url("../img/project/nipro.webp");
+        // background-image: url("../img/project/nipro.webp");
+        background-image: url("../../img/project/tailwind-login.webp");
         @include bg-css;
       }
+
+      // BOOTSTRAP-3
       &:nth-child(8) {
-        background-image: url("../img/project/taxicab.webp");
+        // background-image: url("../img/project/taxicab.webp");
+        background-image: url("../../img/project/taxicab.webp");
         @include bg-css;
       }
+
+      // BOOTSTRAP-4
       &:nth-child(9) {
-        background-image: url("../img/project/e-school.webp");
+        // background-image: url("../img/project/e-school.webp");
+        background-image: url("../../img/project/e-school.webp");
         @include bg-css;
       }
+      
+      //EMAIL-2
       &:nth-child(10) {
-        background-image: url("../img/project/email1.webp");
+        // background-image: url("../img/project/email1.webp");
+        background-image: url("../../img/project/email2.webp");
         @include bg-css;
       }
+
+      // BOOTSTRAP-5
       &:nth-child(11) {
-        background-image: url("../img/project/minimo.webp");
+        // background-image: url("../img/project/minimo.webp");
+        background-image: url("../../img/project/minimo.webp");
         @include bg-css;
       }
+
+      //WORDDPRESS-3
       &:nth-child(12) {
-        background-image: url("../img/project/ilander.webp");
+        // background-image: url("../img/project/ilander.webp");
+        background-image: url("../../img/project/ilander.webp");
         @include bg-css;
       }
+
+      //WORDDPRESS-4
       &:nth-child(13) {
-        background-image: url("../img/project/email2.webp");
+        // background-image: url("../img/project/email2.webp");
+        background-image: url("../../img/project/e-commerce.webp");
         @include bg-css;
       }
+
+      //WORDDPRESS-5
       &:nth-child(14) {
-        background-image: url("../img/project/codext.webp");
+        // background-image: url("../img/project/codext.webp");
+        background-image: url("../../img/project/codext.webp");
+        @include bg-css;
+      }
+
+      //TAILWIND CSS-1 (bootstrap for now)
+      &:nth-child(15) {
+        // background-image: url("../img/project/codext.webp");
+        // background-image: url("../../img/project/codext.webp");
+        background-image: url("../../img/project/nipro.webp");
         @include bg-css;
       }
     }
