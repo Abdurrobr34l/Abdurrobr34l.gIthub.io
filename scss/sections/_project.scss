@@ -1,0 +1,171 @@
+.project {
+  height: 100%;
+
+  &__container {
+    padding: 20px;
+    text-align: center;
+  }
+
+  &__filter {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    &-buttons {
+      gap: 10px;
+      padding-top: 30px;
+    }
+
+    ul {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    &-btn {
+      padding: 10px 20px;
+      color: $primary-clr;
+      background-color: $accent-clr;
+      border: 1px solid transparent;
+      border-radius: $border-radius;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        color: $accent-clr;
+        background-color: transparent;
+        border: 1px solid $accent-clr !important;
+        cursor: pointer;
+      }
+    }
+    // The below code is to highlight the active button
+    .active {
+      color: $accent-clr;
+      background-color: transparent;
+      border: 1px solid $accent-clr !important;
+    }
+
+    &-boxes {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 80px 0 40px;
+    }
+
+    &-box {
+      display: block;
+      width: 400px;
+      height: 400px;
+      background-color: $box-bg;
+      border-radius: $border-radius;
+      transition: opacity 0.23s ease-in-out, transform 0.23s ease-in-out;
+      transform: scale(1);
+      opacity: 1;
+
+      &:hover {
+        transform: scale(1.01);
+        transition: opacity 0.23s ease-in-out, transform 0.23s ease-in-out;
+
+        .overlay {
+          opacity: 1;
+          transition: opacity 0.23s ease-in-out, transform 0.23s ease-in-out;
+        }
+      }
+
+      .overlay {
+        place-content: center;
+        width: 100%;
+        min-height: 100%;
+
+        background: linear-gradient(180deg, #1abc9c4d 0%, #1abc9c4d 100%);
+        border-radius: $border-radius;
+        opacity: 0;
+        background-color: rgba(245, 245, 245, 0.616);
+
+        i {
+          padding: 20px;
+          font-size: 30px;
+          border: 5px solid $accent-clr;
+          border-radius: 100%;
+          color: $primary-clr;
+          background-color: $accent-clr;
+          transform: rotate(-35deg);
+
+          &:hover {
+            background-color: $primary-clr;
+            color: $accent-clr;
+          }
+        }
+      }
+
+      @mixin bg-css {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      // Here u can add bg image of your projects
+      &:nth-child(1) {
+        background-image: url("../img/project/agency.webp");
+        @include bg-css;
+      }
+
+      &:nth-child(2) {
+        background-image: url("../img/project/news.webp");
+        @include bg-css;
+      }
+
+      &:nth-child(3) {
+        background-image: url("../img/project/edutech.webp");
+        @include bg-css;
+      }
+
+      &:nth-child(4) {
+        background-image: url("../img/project/bookmark.webp");
+        @include bg-css;
+      }
+
+      &:nth-child(5) {
+        background-image: url("../img/project/entripoti.webp");
+        @include bg-css;
+      }
+
+      &:nth-child(6) {
+        background-image: url("../img/project/e-commerce.webp");
+        @include bg-css;
+      }
+      &:nth-child(7) {
+        background-image: url("../img/project/nipro.webp");
+        @include bg-css;
+      }
+      &:nth-child(8) {
+        background-image: url("../img/project/taxicab.webp");
+        @include bg-css;
+      }
+      &:nth-child(9) {
+        background-image: url("../img/project/e-school.webp");
+        @include bg-css;
+      }
+      &:nth-child(10) {
+        background-image: url("../img/project/email1.webp");
+        @include bg-css;
+      }
+      &:nth-child(11) {
+        background-image: url("../img/project/minimo.webp");
+        @include bg-css;
+      }
+      &:nth-child(12) {
+        background-image: url("../img/project/ilander.webp");
+        @include bg-css;
+      }
+      &:nth-child(13) {
+        background-image: url("../img/project/email2.webp");
+        @include bg-css;
+      }
+      &:nth-child(14) {
+        background-image: url("../img/project/codext.webp");
+        @include bg-css;
+      }
+    }
+  }
+}

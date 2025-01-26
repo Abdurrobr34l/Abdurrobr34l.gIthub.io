@@ -25,6 +25,12 @@ ol, ul {
 img {
   max-width: 100%;
   height: auto;
+  -webkit-user-drag: none; /* Disable dragging in Chrome, Safari */
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; /* Prevent text/image selection */
+  pointer-events: auto; /* Ensure images are still clickable */
 }
 
 body,
@@ -368,142 +374,82 @@ nav ul {
   background-color: #1c2833;
   border: 1px solid transparent;
 }
-.about__right-skill {
-  overflow: hidden;
+.about__right .about__right-skill-wrapper {
+  height: 110px;
   position: relative;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 40px 0;
+  overflow: hidden;
   -webkit-mask-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(20%, rgb(0, 0, 0)), color-stop(80%, rgb(0, 0, 0)), to(rgba(0, 0, 0, 0)));
   -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0));
           mask-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(20%, rgb(0, 0, 0)), color-stop(80%, rgb(0, 0, 0)), to(rgba(0, 0, 0, 0)));
           mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0));
 }
-.about__right-skill .icon {
-  position: absolute;
-  left: 100%;
-  -webkit-animation-name: scrollLeft;
-          animation-name: scrollLeft;
-  -webkit-animation-duration: 36s;
-          animation-duration: 36s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-.about__right-skill .icon img {
-  width: 50px;
-}
 @-webkit-keyframes scrollLeft {
-  from {
-    left: 100%;
-  }
   to {
-    left: -100px;
+    left: -130px;
   }
 }
 @keyframes scrollLeft {
-  from {
-    left: 100%;
-  }
   to {
-    left: -100px;
+    left: -130px;
   }
 }
-.about__right-skill .html {
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+@-webkit-keyframes scrollRight {
+  to {
+    right: -130px;
+  }
 }
-.about__right-skill .css {
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+@keyframes scrollRight {
+  to {
+    right: -130px;
+  }
 }
-.about__right-skill .javascript {
-  -webkit-animation-delay: 6s;
-          animation-delay: 6s;
-}
-.about__right-skills {
-  overflow: hidden;
-  position: relative;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 40px 0;
-  -webkit-mask-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(20%, rgb(0, 0, 0)), color-stop(80%, rgb(0, 0, 0)), to(rgba(0, 0, 0, 0)));
-  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0));
-          mask-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(20%, rgb(0, 0, 0)), color-stop(80%, rgb(0, 0, 0)), to(rgba(0, 0, 0, 0)));
-          mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0));
-  border: 1px solid green;
+.about__right .about__right-skill-wrapper .itemLeft,
+.about__right .about__right-skill-wrapper .itemRight {
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  width: 130px;
+  padding: 10px 0;
   position: absolute;
-  right: 100%;
-  -webkit-animation-name: scrollright;
-          animation-name: scrollright;
-}
-.about__right-skills .icon {
-  position: absolute;
-  left: 100%;
-  -webkit-animation-name: scrollright;
-          animation-name: scrollright;
-  -webkit-animation-duration: 31s;
-          animation-duration: 31s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
+  -webkit-animation-duration: 40s;
+          animation-duration: 40s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
-.about__right-skills .icon img {
+.about__right .about__right-skill-wrapper .itemLeft img,
+.about__right .about__right-skill-wrapper .itemRight img {
   width: 50px;
 }
-.about__right-skills-skills .icon {
-  position: absolute;
-  right: 100% !important;
-  -webkit-animation-name: scrollright;
-          animation-name: scrollright;
+.about__right .about__right-skill-wrapper .itemLeft {
+  left: max(650px, 100%);
+  -webkit-animation-name: scrollLeft;
+          animation-name: scrollLeft;
 }
-@-webkit-keyframes scrollright {
-  from {
-    right: 100%;
-  }
-  to {
-    right: -100px;
-  }
+.about__right .about__right-skill-wrapper .itemRight {
+  right: max(650px, 100% + 130px);
+  -webkit-animation-name: scrollRight;
+          animation-name: scrollRight;
 }
-@keyframes scrollright {
-  from {
-    right: 100%;
-  }
-  to {
-    right: -100px;
-  }
+.about__right .about__right-skill-wrapper .item1 {
+  -webkit-animation-delay: -32s;
+          animation-delay: -32s;
 }
-.about__right-skills .sass {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+.about__right .about__right-skill-wrapper .item2 {
+  -webkit-animation-delay: -24s;
+          animation-delay: -24s;
 }
-.about__right-skills .tailwindcss {
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
+.about__right .about__right-skill-wrapper .item3 {
+  -webkit-animation-delay: -16s;
+          animation-delay: -16s;
 }
-.about__right-skills .bootstrap {
-  -webkit-animation-delay: 10s;
-          animation-delay: 10s;
+.about__right .about__right-skill-wrapper .item4 {
+  -webkit-animation-delay: -8s;
+          animation-delay: -8s;
 }
-.about__right-skills .git {
-  -webkit-animation-delay: 15s;
-          animation-delay: 15s;
-}
-.about__right-skills .vite {
-  -webkit-animation-delay: 20s;
-          animation-delay: 20s;
-}
-.about__right-skills .wordpress {
-  -webkit-animation-delay: 25s;
-          animation-delay: 25s;
-}
-.about__right-skills .email {
-  -webkit-animation-delay: 30.5s;
-          animation-delay: 30.5s;
+.about__right .about__right-skill-wrapper .item5 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
 }
 
 .project {

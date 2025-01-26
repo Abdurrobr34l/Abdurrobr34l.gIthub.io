@@ -1,0 +1,47 @@
+.service {
+  // place-content: center;
+  // min-height: 100vh;
+
+  &__wrapper {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    &-box {
+      place-content: center;
+      padding: 20px;
+      width: 32%;
+      height: 280px;
+      border-radius: $border-radius;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      transition: 0.3s ease-in-out;
+      cursor: default;
+
+      &:hover {
+        box-shadow: hsla(168, 76%, 42%, 0.55) 0px 2px 8px 0px;
+      }
+
+      i {
+        font-size: 40px;
+        font-weight: bold;
+        color: $accent-clr;
+      }
+
+      h2 {
+        margin: 20px 0;
+        font-weight: 700;
+      }
+
+      p {
+        font-weight: 500;
+        color: $primary-clr;
+        line-height: 25px;
+      }
+    }
+  }
+
+  &__btn {
+    margin: 40px auto 0;
+    text-align: center;
+  }
+}

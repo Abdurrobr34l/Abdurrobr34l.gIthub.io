@@ -1,0 +1,98 @@
+.contact {
+  // place-content: center;
+  padding: 60px 0;
+  // min-height: 100vh;
+
+  &__container {
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 80%;
+  }
+
+  &__info,
+  &__form {
+    flex: 1;
+  }
+
+  &__info {
+    flex-direction: column;
+    gap: 40px;
+    
+    h2 {
+      margin-bottom: 15px;
+      font-size: 18px;
+      font-weight: 500;
+      color: $text-clr;
+    }
+
+    &-box {
+      align-items: center;
+      gap: 20px;
+
+      .icon {
+        :hover {
+          color: #fff;
+          cursor: default;
+        }
+
+        i {
+          padding: 15px;
+          border: 1px solid #fff;
+          border-radius: 50%;
+
+          :hover {
+            color: #fff;
+            cursor: default;
+          }
+        }
+      }
+
+      .content {
+        :first-child {
+          font-weight: 700;
+        }
+
+        :last-child {
+          margin-top: 5px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  &__form {
+    &-name,
+    &-email,
+    &-message {
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px 0;
+      outline: none; 
+      box-shadow: none;
+      color: $text-clr;
+
+      :focus {
+        outline: none;
+      }
+
+      input,
+      textarea {
+        padding: 20px;
+        border-radius: $border-radius;
+      }
+
+      textarea {
+        height: 100px;
+      }
+    }
+
+    &-btn {
+      margin-top: 20px;
+    }
+  }
+
+  #status {
+    margin-top: 10px;
+  }
+}

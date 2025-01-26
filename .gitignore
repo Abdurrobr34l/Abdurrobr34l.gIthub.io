@@ -7,7 +7,7 @@ package-lock.json
 package.json
 
 # Ignore all files in the temp directory
-scss/
-cv/
+# scss/
+# cv/
 # img/
-js/
+# js/

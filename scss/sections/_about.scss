@@ -1,0 +1,278 @@
+
+@import "../variables";
+
+.about {
+  // min-height: 100vh;
+  // place-content: center;
+
+  &__wrapper {
+    align-items: center;
+    gap: 50px;
+  }
+
+  &__left,
+  &__right {
+    flex-direction: column;
+    gap: 20px;
+    height: fit-content;
+  }
+
+  &__left {
+    flex: 1;
+
+    &-image {
+      img {
+        width: 100%;
+      }
+    }
+
+    &-social {
+      justify-content: space-evenly;
+      padding: 15px 0;
+
+      i {
+        font-size: 20px;
+        color: $primary-clr;
+
+        &:hover {
+          color: $accent-clr;
+        }
+      }
+    }
+  }
+
+  &__right {
+    flex: 2;
+    // border: 1px solid;
+
+    &-text {
+      .wrap h2 {
+        font-size: clamp(24px, 4vw + 1rem, 35px);
+      }
+
+      .typewrite {
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 700;
+        color: $accent-clr;
+        border-right: 4px solid $accent-clr;
+      }
+
+      p {
+        margin: 20px 0 30px;
+        font-weight: 500;
+        color: $primary-clr;
+        line-height: 25px;
+      }
+
+      &-btn {
+        &:hover {
+          background-color: $primary-clr;
+          border: 1px solid transparent;
+        }
+      }
+    }
+
+    // .about__right-skill {
+    //   position: relative; // Make the parent container relative
+    //   border: 1px solid red;
+    //   overflow: hidden; // Hide overflow to keep icons within bounds
+    //   padding: 40px 0;
+    //   white-space: nowrap; /* Prevents line breaks */
+    //   mask-image: linear-gradient(
+    //     to right,
+    //     rgba(0, 0, 0, 0),
+    //     rgba(0, 0, 0, 1) 20%,
+    //     rgba(0, 0, 0, 1) 80%,
+    //     rgba(0, 0, 0, 0)
+    //   );
+      
+    //   .about__right-skill-wrapper {
+    //     display: flex;
+    //     align-items: center;
+    //     // justify-content: flex-start;
+    //     // gap: 30px;
+    //     animation: scrollLeft 30s linear infinite;
+    
+    //     .icon {
+    //       position: relative;
+    //       // left: 100%;
+    //       // width: 50px;
+    //       animation-name: scrollLeft;
+    //       animation-duration: 48s;
+    //       animation-timing-function: linear;
+    //       animation-iteration-count: infinite;
+
+    //       // display: flex;
+    //       // justify-content: center;
+    //       // align-items: center;
+    
+    //       img {
+    //         width: 50px;
+    //       }
+    //     }
+    
+    //     @keyframes scrollLeft {
+    //       from {
+    //         // left: 100%;
+    //         transform: translateX(100%); /* Move to the left */
+    //       }
+    //       to {
+            
+    //         // left: -100%;
+    //         transform: translateX(-100%); /* Move to the left */
+    //       }
+    //     }
+    
+    //     .html {
+    //       animation-delay: 0s;
+    //     }
+    
+    //     .css {
+    //       animation-delay: 5s;
+    //     }
+    
+    //     .javascript {
+    //       animation-delay: 10s;
+    //     }
+    
+    //     .sass {
+    //       animation-delay: 15s;
+    //     }
+    
+    //     .tailwindcss {
+    //       animation-delay: 20s;
+    //     }
+    
+    //     .bootstrap {
+    //       animation-delay: 25s;
+    //     }
+    
+    //     .git {
+    //       animation-delay: 30s;
+    //     }
+    
+    //     .vite {
+    //       animation-delay: 35s;
+    //     }
+    
+    //     .wordpress {
+    //       animation-delay: 40s;
+    //     }
+    
+    //     .email {
+    //       animation-delay: 45s;
+    //     }
+    //   }
+    // }
+    
+    .about__right-skill {
+      // border: 1px solid;
+
+      &-wrapper {
+        // margin-top: 2rem;
+        // width: 90%;
+        // max-width: 1536px;
+        // margin-inline: auto;
+        height: 110px;
+        position: relative;
+        overflow: hidden;
+        mask-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 1) 20%,
+          rgba(0, 0, 0, 1) 80%,
+          rgba(0, 0, 0, 0)
+        );
+
+        @keyframes scrollLeft {
+          to {
+            left: -130px;
+          }
+        }
+        
+        @keyframes scrollRight {
+          to {
+            right: -130px;
+          }
+        }
+        
+        .itemLeft,
+        .itemRight {
+          // border: 1px solid $accent-clr;
+          border-radius: $border-radius;
+          background-color: $text-clr;
+          width: 130px;
+          padding: 10px 0;
+          // height: 100px;
+          // background-color: #e11d48;
+          // border-radius: 6px;
+          position: absolute;
+          animation-timing-function: linear;
+          animation-duration: 40s;
+          animation-iteration-count: infinite;
+
+          img {
+            width: 50px;
+            // width: 200px;
+          }
+        }
+        
+        .itemLeft {
+          left: max(calc(130px * 5), 100%);
+          animation-name: scrollLeft;
+        }
+        
+        .itemRight {
+          right: max(calc(130px * 5), calc(100% + 130px));
+          animation-name: scrollRight;
+        }
+        
+        .item1 {
+          animation-delay: calc(40s / 5 * (5 - 1) * -1);
+        }
+        
+        .item2 {
+          animation-delay: calc(40s / 5 * (5 - 2) * -1);
+        }
+        
+        .item3 {
+          animation-delay: calc(40s / 5 * (5 - 3) * -1);
+        }
+        
+        .item4 {
+          animation-delay: calc(40s / 5 * (5 - 4) * -1);
+        }
+        
+        .item5 {
+          animation-delay: calc(40s / 5 * (5 - 5) * -1);
+        }
+        
+        // .item6 {
+        //   animation-delay: calc(30s / 10 * (10 - 6) * -1);
+        // }
+        
+        // .item7 {
+        //   animation-delay: calc(30s / 10 * (10 - 7) * -1);
+        // }
+        
+        // .item8 {
+        //   animation-delay: calc(30s / 10 * (10 - 8) * -1);
+        // }
+
+        // .item9 {
+        //   animation-delay: calc(30s / 10 * (10 - 9) * -1);
+        // }
+
+        // .item10 {
+        //   animation-delay: calc(30s / 10 * (10 - 10) * -1);
+        // }
+      }
+
+      
+    }
+
+    
+
+  }
+}

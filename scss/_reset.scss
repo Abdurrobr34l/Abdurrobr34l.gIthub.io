@@ -24,4 +24,7 @@ ol, ul {
 img {
   max-width: 100%;
   height: auto;
+  -webkit-user-drag: none; /* Disable dragging in Chrome, Safari */
+  user-select: none; /* Prevent text/image selection */
+  pointer-events: auto; /* Ensure images are still clickable */
 }
